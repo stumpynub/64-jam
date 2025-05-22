@@ -1,0 +1,50 @@
+# Godot-specific
+.import/
+.export/
+export_presets.cfg
+
+# Godot 4.x binary cache
+.godot/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+
+# Swap files
+*.swp
+*.swo
+
+# Compiled scripts (if you're using C#)
+*.mono/
+.mono/
+*.csproj
+*.sln
+*.user
+*.pidb
+*.dll
+*.exe
+
+# Build output for C#/Mono
+/bin/
+.obj/
+*.mdb
+
+# Godot 4's C# solution folders
+.project/
+.idea/
+.vscode/
+
+# Optional: ignore the local editor layout settings
+editor_layout.cfg
+
+# Optional: ignore crash logs (but keep them if useful to debug)
+_crash.txt
+_debug.log
