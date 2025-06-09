@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bph01dvfply2g"]
+
+[ext_resource type="Texture2D" uid="uid://b6uwtfmxbsgv7" path="res://assets/images/pine.png" id="1_h0t7v"]
+
+[node name="Tree" type="Node3D"]
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00209355, 2.92866, -0.00383258)
+pixel_size = 0.09
+billboard = 2
+shaded = true
+texture_filter = 0
+texture = ExtResource("1_h0t7v")
