@@ -4,6 +4,8 @@ extends Control
 @onready var options = $options_menu as OptionsMenu
 @onready var margin_container = $MarginContainer as MarginContainer
 
+@export var start_level_uid: String
+
 func _ready() -> void:
 	# Connect signal from options_menu to receive button presses
 	options.return_menu.connect(_on_return_pressed)
@@ -12,7 +14,8 @@ func _ready() -> void:
 
 # Starts the game
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/levels/level_proto_rail.tscn")
+	if ResourceLoader.get_resource_uid(start_level_uid) == -1: return 
+	get_tree().change_scene_to_file(start_level_uid)
 
 #Opens up options
 func _on_options_pressed() -> void:

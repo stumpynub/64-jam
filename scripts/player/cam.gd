@@ -1,4 +1,4 @@
-extends Node3D
+extends Camera3D
 
 #nodes
 @export_group("Nodes")
@@ -31,7 +31,7 @@ var zoom_tween: Tween
 
 func _ready():
 	Input.set_use_accumulated_input(false)
-
+	default_fov = fov
 
 func _unhandled_input(event)->void:
 	

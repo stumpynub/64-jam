@@ -1,11 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://bqyu4rme4odak"]
+[gd_scene load_steps=9 format=3 uid="uid://b0mmyofiytdkj"]
 
-[ext_resource type="Script" uid="uid://b7xlw0r2vo3ww" path="res://scripts/menu/main_menu.gd" id="1_leamy"]
-[ext_resource type="Texture2D" uid="uid://c8qh8oaw8exqc" path="res://assets/images/3988897f-d140-465c-91bf-149ae6e22d11.png" id="2_721jg"]
-[ext_resource type="PackedScene" uid="uid://de0rxh3glgvk6" path="res://scenes/levels/options_menu.tscn" id="3_721jg"]
+[ext_resource type="Script" uid="uid://b7xlw0r2vo3ww" path="res://scripts/menu/main_menu.gd" id="1_8clyu"]
+[ext_resource type="Texture2D" uid="uid://c8qh8oaw8exqc" path="res://assets/images/3988897f-d140-465c-91bf-149ae6e22d11.png" id="2_5eys1"]
+[ext_resource type="PackedScene" uid="uid://de0rxh3glgvk6" path="res://scenes/ui/options_menu.tscn" id="3_ap681"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
-texture = ExtResource("2_721jg")
+texture = ExtResource("2_5eys1")
 modulate_color = Color(0.65834, 0.65834, 0.65834, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_06t4h"]
@@ -41,7 +41,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_leamy")
+script = ExtResource("1_8clyu")
+start_level_uid = "uid://3gp3glrtcns3"
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 2
@@ -126,7 +127,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_7vrkn")
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
 text = "Exit"
 
-[node name="options_menu" parent="." instance=ExtResource("3_721jg")]
+[node name="options_menu" parent="." instance=ExtResource("3_ap681")]
 visible = false
 layout_mode = 1
 

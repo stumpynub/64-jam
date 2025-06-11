@@ -1,0 +1,93 @@
+[gd_scene load_steps=12 format=3 uid="uid://dntw88gfco4ki"]
+
+[ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/core/level_base.gd" id="1_7m3nq"]
+[ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_hebdk"]
+[ext_resource type="PackedScene" uid="uid://cx62uttsobnlu" path="res://assets/meshes/enviroment/terrain/cave.blend" id="6_8hu1x"]
+[ext_resource type="Texture2D" uid="uid://d4nefkl25udlw" path="res://assets/images/moon.png" id="6_j84w5"]
+[ext_resource type="Shader" uid="uid://btnnba664xdt4" path="res://assets/shaders/shader_crtv.gdshader" id="7_2hx22"]
+[ext_resource type="Texture2D" uid="uid://cpm0rstkkiydj" path="res://assets/images/textures/rock.png" id="7_7m3nq"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tortc"]
+sky_top_color = Color(0.0562731, 0.208392, 0.347208, 1)
+sky_horizon_color = Color(0.0207741, 0.164199, 0.193945, 1)
+sky_curve = 0.227357
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_6jft4"]
+sky_material = SubResource("ProceduralSkyMaterial_tortc")
+
+[sub_resource type="Environment" id="Environment_ksw18"]
+background_mode = 2
+sky = SubResource("Sky_6jft4")
+ambient_light_sky_contribution = 0.0
+tonemap_mode = 2
+fog_light_color = Color(0.061217, 0.223754, 0.368007, 1)
+fog_density = 0.0185
+fog_sky_affect = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8gldb"]
+shader = ExtResource("7_2hx22")
+shader_parameter/crt_curve = 0.0
+shader_parameter/crt_scan_line_color = 0.009
+shader_parameter/aperture_grille_rate = 0.229
+shader_parameter/rf_switch_esque_blur = 1.0
+shader_parameter/white_noise_rate = 0.048
+shader_parameter/alpha = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hebdk"]
+albedo_texture = ExtResource("7_7m3nq")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true
+
+[node name="LevelProtoRail" type="Node3D"]
+script = ExtResource("1_7m3nq")
+
+[node name="Enviro" type="Node3D" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Enviro"]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+visible = false
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Enviro"]
+environment = SubResource("Environment_ksw18")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_hebdk")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.551082, 1.45602, 0)
+
+[node name="Geo" type="Node3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(245.893, 0, 0, 0, 245.893, 0, 0, 0, 245.893, 0, 226.341, -315.276)
+modulate = Color(0.999999, 0.991117, 0.584299, 1)
+billboard = 1
+texture_filter = 0
+texture = ExtResource("6_j84w5")
+
+[node name="Effects" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="Effects"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Panel" type="Panel" parent="Effects/Control"]
+material = SubResource("ShaderMaterial_8gldb")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="cave" parent="." instance=ExtResource("6_8hu1x")]
+
+[node name="cave " parent="cave" index="0"]
+material_override = SubResource("StandardMaterial3D_hebdk")
+
+[editable path="cave"]
