@@ -10,10 +10,10 @@ const JUMP_VELOCITY = 4.5
 
 @onready var flashlight = %Flashlight
 @onready var UI = $UI
+@onready var isPaused = false
 
 func _ready() -> void:
-	UI.fear_meter_increase.emit()
-	UI.fearMeter.value = 10
+	pass
 
 #TODO add dampening 
 func _physics_process(delta: float) -> void:
@@ -49,6 +49,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		
 	if event.is_action_pressed("interact"):
 		fearMeter()
+		
+	if event.is_action_pressed("escape"):
+		pause()
 
 
 func jump(): 
@@ -60,3 +63,14 @@ func fearMeter():
 
 func toggle_flashlight(): 
 	flashlight.visible = !flashlight.visible
+
+func pause():
+	print(get_tree().paused)
+	if isPaused == false:
+		get_tree().paused = true
+		UI._pauseMenu(true)
+		isPaused = true
+	else:
+		get_tree().paused = false
+		UI._pauseMenu(false)
+		isPaused = false
