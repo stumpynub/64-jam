@@ -9,7 +9,11 @@ const JUMP_VELOCITY = 4.5
 
 
 @onready var flashlight = %Flashlight
+@onready var UI = $UI
 
+func _ready() -> void:
+	UI.fear_meter_increase.emit()
+	UI.fearMeter.value = 10
 
 #TODO add dampening 
 func _physics_process(delta: float) -> void:
@@ -42,12 +46,17 @@ func _unhandled_input(event: InputEvent) -> void:
 		
 	if event.is_action_pressed("flashlight"): 
 		toggle_flashlight()
+		
+	if event.is_action_pressed("interact"):
+		fearMeter()
 
 
 func jump(): 
 	if !is_on_floor(): return 
 	velocity.y = 10 
 
+func fearMeter():
+	UI._updateFearMeter(15, 2)
 
 func toggle_flashlight(): 
 	flashlight.visible = !flashlight.visible

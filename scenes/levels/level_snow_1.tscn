@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://3gp3glrtcns3"]
+[gd_scene load_steps=12 format=3 uid="uid://3gp3glrtcns3"]
 
-[ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/core/level_base.gd" id="1_6467n"]
+[ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/level_base.gd" id="1_6467n"]
 [ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_ojhfn"]
 [ext_resource type="PackedScene" uid="uid://by8441uclwbqn" path="res://assets/meshes/enviroment/terrain/level_1.glb" id="3_ayfo3"]
+[ext_resource type="PackedScene" uid="uid://cyxu27fdomlhe" path="res://UI.tscn" id="3_ojhfn"]
 [ext_resource type="Texture2D" uid="uid://18jic4h0ib1i" path="res://assets/images/textures/snow1.png" id="4_pj7dd"]
 [ext_resource type="PackedScene" uid="uid://bph01dvfply2g" path="res://scenes/props/pine.tscn" id="5_ks82v"]
 
@@ -44,6 +45,8 @@ environment = SubResource("Environment_ksw18")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_ojhfn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.97853, 0, 0)
+
+[node name="UI" parent="CharacterBody3D" instance=ExtResource("3_ojhfn")]
 
 [node name="Geo" type="Node3D" parent="."]
 

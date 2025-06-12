@@ -1,6 +1,6 @@
 [gd_scene load_steps=12 format=3 uid="uid://dntw88gfco4ki"]
 
-[ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/core/level_base.gd" id="1_7m3nq"]
+[ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/level_base.gd" id="1_7m3nq"]
 [ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_hebdk"]
 [ext_resource type="PackedScene" uid="uid://cx62uttsobnlu" path="res://assets/meshes/enviroment/terrain/cave.blend" id="6_8hu1x"]
 [ext_resource type="Texture2D" uid="uid://d4nefkl25udlw" path="res://assets/images/moon.png" id="6_j84w5"]
