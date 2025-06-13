@@ -6,6 +6,15 @@ extends CharacterBody3D
 @export var reached_distance= 4.0
 @export var walk_speed = 5
 
+var test_timer = Timer.new()
+
+func _ready() -> void:
+	add_child(test_timer)
+	test_timer.connect("timeout", test_timeout)
+	test_timer.wait_time = 3.0
+	test_timer.one_shot = false 
+	test_timer.start()
+
 func _physics_process(delta: float) -> void:
 	agent.target_position = target.global_position
 	
@@ -30,8 +39,13 @@ func tp_rand():
 
 func tp_spook(): 
 	var cam = get_viewport().get_camera_3d()
-	var spook_dir = cam.global_basis.z * Vector3(1, 0, 1)
+	var spook_dir = -cam.global_basis.z * Vector3(1, 0, 1)
 	var spook_point = NavigationServer3D.map_get_closest_point(
 		agent.get_navigation_map(), 
-		cam.global_position + spook_dir * 3
+		cam.global_position + spook_dir * 10
 		)
+	global_position = spook_point
+
+
+func test_timeout(): 
+	tp_spook()
