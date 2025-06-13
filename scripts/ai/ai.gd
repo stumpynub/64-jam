@@ -4,7 +4,7 @@ extends CharacterBody3D
 @export var agent: NavigationAgent3D
 @export var target: Node3D
 @export var reached_distance= 4.0
-
+@export var walk_speed = 5
 
 func _physics_process(delta: float) -> void:
 	agent.target_position = target.global_position
@@ -14,7 +14,7 @@ func _physics_process(delta: float) -> void:
 	if dist > reached_distance: 
 		var next = agent.get_next_path_position()
 		var vel = next - global_position 
-		velocity = vel.normalized()
+		velocity = vel.normalized() * walk_speed
 	else: 
 		velocity = Vector3(0, velocity.y, 0) # stop horizontal movement 
 		

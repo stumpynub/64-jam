@@ -5,9 +5,31 @@
 [node name="Tree" type="Node3D"]
 
 [node name="Sprite3D2" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00209355, 2.92866, -0.00383258)
-pixel_size = 0.09
-billboard = 2
-shaded = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00209355, 6.3775, -0.00383258)
+ignore_occlusion_culling = true
+pixel_size = 0.2
+alpha_cut = 3
+alpha_scissor_threshold = 0.657
+alpha_hash_scale = 0.0
+texture_filter = 0
+texture = ExtResource("1_h0t7v")
+
+[node name="Sprite3D3" type="Sprite3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.00209355, 6.3775, -0.00383258)
+ignore_occlusion_culling = true
+pixel_size = 0.2
+alpha_cut = 3
+alpha_scissor_threshold = 0.657
+alpha_hash_scale = 0.0
+texture_filter = 0
+texture = ExtResource("1_h0t7v")
+
+[node name="Sprite3D4" type="Sprite3D" parent="."]
+transform = Transform3D(0.866025, 0, -0.5, 0, 1, 0, 0.5, 0, 0.866025, -0.00209355, 6.3775, -0.00383258)
+ignore_occlusion_culling = true
+pixel_size = 0.2
+alpha_cut = 3
+alpha_scissor_threshold = 0.657
+alpha_hash_scale = 0.0
 texture_filter = 0
 texture = ExtResource("1_h0t7v")
