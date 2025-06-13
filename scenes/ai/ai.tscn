@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://s81dl61row4j"]
+
+[ext_resource type="Script" uid="uid://cco3et537d8a2" path="res://scripts/ai/ai.gd" id="1_be6ib"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_be6ib"]
+
+[node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("agent")]
+script = ExtResource("1_be6ib")
+agent = NodePath("NavigationAgent3D")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+debug_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.884702, 0)
+mesh = SubResource("CapsuleMesh_be6ib")

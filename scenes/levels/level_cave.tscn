@@ -39,7 +39,7 @@ albedo_texture = ExtResource("7_7m3nq")
 uv1_scale = Vector3(0.2, 0.2, 0.2)
 uv1_triplanar = true
 
-[node name="LevelProtoRail" type="Node3D"]
+[node name="LevelProtoRail2" type="Node3D"]
 script = ExtResource("1_7m3nq")
 
 [node name="Enviro" type="Node3D" parent="."]
