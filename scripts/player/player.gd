@@ -11,9 +11,11 @@ const JUMP_VELOCITY = 4.5
 @onready var flashlight = %Flashlight
 @onready var UI = $UI
 @onready var isPaused = false
+@onready var spooky = $"../NavigationRegion3D/AI"
 
 func _ready() -> void:
 	pass
+	
 
 #TODO add dampening 
 func _physics_process(delta: float) -> void:
@@ -48,10 +50,12 @@ func _unhandled_input(event: InputEvent) -> void:
 		toggle_flashlight()
 		
 	if event.is_action_pressed("interact"):
-		fearMeter()
+		pass #fearMeter()
 		
 	if event.is_action_pressed("escape"):
 		pause()
+		
+		
 
 
 func jump(): 
@@ -74,3 +78,6 @@ func pause():
 		get_tree().paused = false
 		UI._pauseMenu(false)
 		isPaused = false
+
+func seenspooky():
+	fearMeter()

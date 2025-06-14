@@ -1,9 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://vsm2wylpucxk"]
+[gd_scene load_steps=8 format=3 uid="uid://vsm2wylpucxk"]
 
 [ext_resource type="Script" uid="uid://67y3vv6nxl58" path="res://scripts/player/player.gd" id="1_gmlin"]
 [ext_resource type="Script" uid="uid://bohwrm4r887pw" path="res://scripts/player/cam.gd" id="2_lvxji"]
+[ext_resource type="Texture2D" uid="uid://yshjx0rl2hpc" path="res://assets/images/puff.png" id="3_p47bc"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8gldb"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8gldb"]
+emission_shape_scale = Vector3(71, 72, 72)
+emission_shape = 1
+emission_sphere_radius = 1.0
+gravity = Vector3(0, -1, 0)
+tangential_accel_min = -0.980002
+tangential_accel_max = 0.999998
+scale_min = 0.05
+scale_max = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bwpd2"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("3_p47bc")
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_mjc44"]
+material = SubResource("StandardMaterial3D_bwpd2")
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("cam")]
 script = ExtResource("1_gmlin")
@@ -15,6 +39,13 @@ shape = SubResource("CapsuleShape3D_8gldb")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.941138, 0)
 script = ExtResource("2_lvxji")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.71982, -0.830462)
+amount = 1024
+lifetime = 2.0
+process_material = SubResource("ParticleProcessMaterial_8gldb")
+draw_pass_1 = SubResource("QuadMesh_mjc44")
 
 [node name="Flashlight" type="SpotLight3D" parent="Camera3D"]
 unique_name_in_owner = true

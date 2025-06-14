@@ -14,10 +14,6 @@ config/name="64 Jam"
 run/main_scene="uid://b0mmyofiytdkj"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
-[autoload]
-
-LevelGlobal="*res://scripts/core/level_global.gd"
-
 [input]
 
 ui_cancel={

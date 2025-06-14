@@ -1,4 +1,4 @@
-class_name UI
+
 extends Control
 
 signal fear_meter_decrease
@@ -22,12 +22,12 @@ func _updateFearMeter(value, acceleration) -> void:
 func _pauseMenu(value):
 	if value == true:
 		pauseMenu.visible = true
-		pauseMenu.mouse_filter = MOUSE_FILTER_STOP
+		#pauseMenu.mouse_filter = MOUSE_FILTER_STOP
 		print("Entered true")
 		print(pauseMenu.mouse_filter)
 	else:
 		pauseMenu.visible = false
-		pauseMenu.mouse_filter = MOUSE_FILTER_IGNORE
+		#pauseMenu.mouse_filter = MOUSE_FILTER_IGNORE
 		unpause.emit()
 		print("Entered false")
 		print(pauseMenu.mouse_filter)
