@@ -1,4 +1,4 @@
-class_name UI
+
 extends Control
 
 signal fear_meter_decrease

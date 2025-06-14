@@ -69,6 +69,8 @@ navigation_mesh = SubResource("NavigationMesh_ojhfn")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.53872, 10.5652)
 target = NodePath("../../CharacterBody3D")
 
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="NavigationRegion3D/AI"]
+
 [node name="Geo" type="Node3D" parent="NavigationRegion3D"]
 transform = Transform3D(0.405058, 0, 0, 0, 0.405058, 0, 0, 0, 0.405058, 0, 0, 0)
 
@@ -1611,5 +1613,8 @@ transform = Transform3D(-0.999857, 0, -0.016924, 0, 1, 0, 0.016924, 0, -0.999857
 
 [node name="@Node3D@45529" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
 transform = Transform3D(-0.415036, 0, 0.909805, 0, 1, 0, -0.909805, 0, -0.415036, 93.0424, -13.9594, -30.7908)
+
+[connection signal="screen_entered" from="NavigationRegion3D/AI/VisibleOnScreenNotifier3D" to="NavigationRegion3D/AI" method="_on_visible_on_screen_notifier_3d_screen_entered"]
+[connection signal="screen_exited" from="NavigationRegion3D/AI/VisibleOnScreenNotifier3D" to="NavigationRegion3D/AI" method="_on_visible_on_screen_notifier_3d_screen_exited"]
 
 [editable path="NavigationRegion3D/Geo/level_1"]
