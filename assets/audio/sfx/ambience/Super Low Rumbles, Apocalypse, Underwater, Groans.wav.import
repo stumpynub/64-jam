@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cnnafidib53sa"
+path="res://.godot/imported/Super Low Rumbles, Apocalypse, Underwater, Groans.wav-2cf15e6ed228668a5e00001507d944d2.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/ambience/Super Low Rumbles, Apocalypse, Underwater, Groans.wav"
+dest_files=["res://.godot/imported/Super Low Rumbles, Apocalypse, Underwater, Groans.wav-2cf15e6ed228668a5e00001507d944d2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

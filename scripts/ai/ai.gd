@@ -19,9 +19,18 @@ func _physics_process(delta: float) -> void:
 		velocity = vel.normalized() * walk_speed
 	else: 
 		velocity = Vector3(0, velocity.y, 0) # stop horizontal movement 
-		
+	
+	look_at_target()
+	
 	move_and_slide()
 
+
+func look_at_target(): 
+	var flat_vel = Vector3(velocity.x, 0, velocity.z)
+	basis = basis.slerp(
+		basis.looking_at(flat_vel, Vector3.UP), 
+		0.2
+		)
 
 func tp_rand(): 
 	var rand_point = NavigationServer3D.map_get_random_point(
@@ -32,17 +41,19 @@ func tp_rand():
 
 func tp_spook(): 
 	var cam = get_viewport().get_camera_3d()
-	var spook_dir = cam.global_basis.z * Vector3(1, 0, 1)
+	var spook_dir = -cam.global_basis.z * Vector3(1, 0, 1)
 	var spook_point = NavigationServer3D.map_get_closest_point(
 		agent.get_navigation_map(), 
-		cam.global_position + spook_dir * 3
+		cam.global_position + spook_dir * 50
 		)
+	global_position = spook_point
 
 
 func _on_visible_on_screen_notifier_3d_screen_entered() -> void:
 	print("entered")
 	print(agent.distance_to_target())
 	player.seenspooky(agent.distance_to_target())
+
 
 func _on_visible_on_screen_notifier_3d_screen_exited() -> void:
 	player.spookygone(agent.distance_to_target())
