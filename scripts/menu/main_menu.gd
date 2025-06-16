@@ -14,6 +14,7 @@ func _ready() -> void:
 
 # Starts the game
 func _on_start_pressed() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	if ResourceLoader.get_resource_uid(start_level_uid) == -1: return 
 	get_tree().change_scene_to_file(start_level_uid)
 

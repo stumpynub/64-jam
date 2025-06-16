@@ -6,15 +6,10 @@ signal fear_meter_increase
 signal unpause
 @onready var fearMeter = $fearMeter
 @onready var pauseMenu = $pauseMenu
+@onready var fearmultiplier = 1
 
 var target = 20
 
-func _ready() -> void:
-	var tween = get_tree().create_tween()
-	
-	tween.set_ease(Tween.EASE_OUT)
-	tween.set_trans(Tween.TRANS_BOUNCE)
-	tween.tween_property(fearMeter, "value", 50, 2.0)
 
 
 func _input(event: InputEvent) -> void:
@@ -23,18 +18,38 @@ func _input(event: InputEvent) -> void:
 			get_tree().paused = false
 	
 #managing the fear meter's progression
-func _updateFearMeter(value, acceleration) -> void:
-	fearMeter.value = fearMeter.value + (value * acceleration)
+func _increaseFearMeter(value, distance) -> void:
+
+	#Creates the multiplier to change the rate the meter fills
+	if fearMeter.value <= 25:
+		fearmultiplier = 2.5
+	elif fearMeter.value < 75:
+		fearmultiplier = 1.5
+	elif fearMeter.value < 90:
+		fearmultiplier = 2
+		
+	if fearMeter.value <= 90:
+		var tween = get_tree().create_tween()
+		tween.set_ease(Tween.EASE_OUT)
+		tween.set_trans(Tween.TRANS_QUART)
+		tween.tween_property(fearMeter, "value", 100, distance * fearmultiplier)
+	#After 90, the tween slows down too much. Increment to 100
+	else: 
+		fearMeter.value = fearMeter.value + 1
+#managing the fear meter's progression
+
+
+func _decreaseFearMeter() -> void:
+	var tween = get_tree().create_tween()
+	tween.set_ease(Tween.EASE_OUT)
+	tween.set_trans(Tween.TRANS_QUINT)
+	tween.tween_property(fearMeter, "value", 0, 10)
+
 
 func _pauseMenu(value):
 	if value == true:
 		pauseMenu.visible = true
-		#pauseMenu.mouse_filter = MOUSE_FILTER_STOP
-		print("Entered true")
-		print(pauseMenu.mouse_filter)
-	else:
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	elif value == false:
 		pauseMenu.visible = false
-		#pauseMenu.mouse_filter = MOUSE_FILTER_IGNORE
-		unpause.emit()
-		print("Entered false")
-		print(pauseMenu.mouse_filter)
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED

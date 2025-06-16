@@ -3,7 +3,7 @@ class_name Player extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
-
+enum fearstates {fear0, fear1, fear2, fear3, fear4}
 
 @export var cam: Camera3D
 
@@ -12,6 +12,8 @@ const JUMP_VELOCITY = 4.5
 @onready var UI = $UI
 @onready var isPaused = false
 @onready var spooky = $"../NavigationRegion3D/AI"
+@onready var spookystillinframe = false
+@onready var timer = $"../Timer"
 
 func _ready() -> void:
 	pass
@@ -54,22 +56,44 @@ func _unhandled_input(event: InputEvent) -> void:
 		
 	if event.is_action_pressed("escape"):
 		pause()
-		
-		
 
 
 func jump(): 
 	if !is_on_floor(): return 
 	velocity.y = 10 
 
-func fearMeter():
-	UI._updateFearMeter(15, 2)
+func seenspooky(distance):
+	spookystillinframe = true	
+	fearMeter(distance)
+
+func spookygone(distance):
+	spookystillinframe = false	
+	fearMeter(distance)
+
+func fearMeter(distance):
+	var distancemultiplier = determine_distance_multiplier(distance)
+	if spookystillinframe:
+		UI._increaseFearMeter(15, distancemultiplier)
+		timer.start(1)
+	else:
+		UI._decreaseFearMeter()
+
+func determine_distance_multiplier(distance):
+	if distance >= 100:
+		return 10
+	elif distance < 100:
+		return 8
+	elif distance < 50:
+		return 6
+	elif distance < 25:
+		return 0.5
+	elif distance < 10:
+		return 0.25
 
 func toggle_flashlight(): 
 	flashlight.visible = !flashlight.visible
 
 func pause():
-	print(get_tree().paused)
 	if isPaused == false:
 		get_tree().paused = true
 		UI._pauseMenu(true)
@@ -79,5 +103,6 @@ func pause():
 		UI._pauseMenu(false)
 		isPaused = false
 
-func seenspooky():
-	fearMeter()
+
+func _on_timer_timeout() -> void:
+	fearMeter(spooky.get_distance())
