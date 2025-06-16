@@ -1,10 +1,10 @@
 shader_type spatial;
 
-uniform sampler2D n1; 
+uniform sampler2D n1;
 
 void vertex() {
-	vec4 c1 = texture(n1, UV); 
-	
+	vec4 c1 = texture(n1, UV);
+
 }
 
 void fragment() {
