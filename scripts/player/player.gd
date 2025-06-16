@@ -13,7 +13,8 @@ enum fearstates {fear0, fear1, fear2, fear3, fear4}
 @onready var isPaused = false
 @onready var spooky = $"../NavigationRegion3D/AI"
 @onready var spookystillinframe = false
-@onready var timer = $"../Timer"
+@onready var timer = $Timer
+
 
 func _ready() -> void:
 	pass

@@ -52,3 +52,5 @@ unique_name_in_owner = true
 light_energy = 5.0
 spot_range = 21.88
 spot_angle = 38.95
+
+[node name="Timer" type="Timer" parent="."]

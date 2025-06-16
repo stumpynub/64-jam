@@ -55,8 +55,6 @@ environment = SubResource("Environment_ksw18")
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_hebdk")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.551082, 1.45602, 0)
 
-[node name="Timer" type="Timer" parent="CharacterBody3D"]
-
 [node name="Geo" type="Node3D" parent="."]
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
@@ -67,6 +65,8 @@ texture_filter = 0
 texture = ExtResource("6_j84w5")
 
 [node name="Effects" type="CanvasLayer" parent="."]
+
+[node name="Timer" type="Timer" parent="Effects"]
 
 [node name="Control" type="Control" parent="Effects"]
 layout_mode = 3
@@ -92,6 +92,6 @@ mouse_filter = 2
 [node name="cave " parent="cave" index="0"]
 material_override = SubResource("StandardMaterial3D_hebdk")
 
-[connection signal="timeout" from="CharacterBody3D/Timer" to="CharacterBody3D" method="_on_timer_timeout"]
+[connection signal="timeout" from="Effects/Timer" to="CharacterBody3D" method="_on_timer_timeout"]
 
 [editable path="cave"]
