@@ -7,14 +7,21 @@ signal unpause
 @onready var fearMeter = $fearMeter
 @onready var pauseMenu = $pauseMenu
 
+var target = 20
+
 func _ready() -> void:
-	pass
+	var tween = get_tree().create_tween()
 	
+	tween.set_ease(Tween.EASE_OUT)
+	tween.set_trans(Tween.TRANS_BOUNCE)
+	tween.tween_property(fearMeter, "value", 50, 2.0)
+
+
 func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("escape"):
 		if get_tree().paused:
 			get_tree().paused = false
-
+	
 #managing the fear meter's progression
 func _updateFearMeter(value, acceleration) -> void:
 	fearMeter.value = fearMeter.value + (value * acceleration)
