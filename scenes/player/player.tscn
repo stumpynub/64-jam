@@ -1,13 +1,18 @@
-[gd_scene load_steps=14 format=3 uid="uid://vsm2wylpucxk"]
+[gd_scene load_steps=22 format=3 uid="uid://vsm2wylpucxk"]
 
 [ext_resource type="Script" uid="uid://67y3vv6nxl58" path="res://scripts/player/player.gd" id="1_gmlin"]
 [ext_resource type="Script" uid="uid://bohwrm4r887pw" path="res://scripts/player/cam.gd" id="2_lvxji"]
 [ext_resource type="Texture2D" uid="uid://yshjx0rl2hpc" path="res://assets/images/puff.png" id="3_p47bc"]
 [ext_resource type="Script" uid="uid://sbumqdkb6muq" path="res://scripts/player/step_player.gd" id="4_lvxji"]
-[ext_resource type="AudioStream" uid="uid://cp4nolmmnbumk" path="res://assets/audio/sfx/steps/Footstep Snow Running 1_01.wav" id="4_qek5x"]
-[ext_resource type="AudioStream" uid="uid://v7lwndytt54u" path="res://assets/audio/sfx/steps/Footstep Snow Running 1_02.wav" id="5_5gtgg"]
-[ext_resource type="AudioStream" uid="uid://d0kwp3bqmluwj" path="res://assets/audio/sfx/steps/Footstep Snow Running 1_04.wav" id="7_je7p5"]
-[ext_resource type="AudioStream" uid="uid://i1gxsce8y0rf" path="res://assets/audio/sfx/steps/Footstep Snow Running 1_06.wav" id="7_qek5x"]
+[ext_resource type="AudioStream" uid="uid://cp4nolmmnbumk" path="res://assets/audio/sfx/steps/snow/Footstep Snow Running 1_01.wav" id="4_qek5x"]
+[ext_resource type="AudioStream" uid="uid://v7lwndytt54u" path="res://assets/audio/sfx/steps/snow/Footstep Snow Running 1_02.wav" id="5_5gtgg"]
+[ext_resource type="AudioStream" uid="uid://d0kwp3bqmluwj" path="res://assets/audio/sfx/steps/snow/Footstep Snow Running 1_04.wav" id="7_je7p5"]
+[ext_resource type="AudioStream" uid="uid://i1gxsce8y0rf" path="res://assets/audio/sfx/steps/snow/Footstep Snow Running 1_06.wav" id="7_qek5x"]
+[ext_resource type="Script" uid="uid://7b25v6m0amq7" path="res://resources/res_step_group.gd" id="9_5gtgg"]
+[ext_resource type="AudioStream" uid="uid://cmqkybjahu6w" path="res://assets/audio/sfx/steps/rocks/Footstep Concrete Running 1_08.wav" id="10_gx1jg"]
+[ext_resource type="AudioStream" uid="uid://cduttuenwwg8m" path="res://assets/audio/sfx/steps/rocks/Footstep Concrete Running 1_09.wav" id="11_ugbui"]
+[ext_resource type="AudioStream" uid="uid://b5ixuuktgqe7o" path="res://assets/audio/sfx/steps/rocks/Footstep Concrete Running 1_10.wav" id="12_fcs02"]
+[ext_resource type="AudioStream" uid="uid://xiq6u3a8wptc" path="res://assets/audio/sfx/steps/rocks/Footstep Concrete Running 2_01.wav" id="13_myrg7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8gldb"]
 
@@ -41,6 +46,25 @@ stream_1/stream = ExtResource("5_5gtgg")
 stream_2/stream = ExtResource("7_je7p5")
 stream_3/stream = ExtResource("7_qek5x")
 
+[sub_resource type="Resource" id="Resource_je7p5"]
+script = ExtResource("9_5gtgg")
+group = "snow"
+streams = SubResource("AudioStreamRandomizer_5gtgg")
+metadata/_custom_type_script = "uid://7b25v6m0amq7"
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_kvlxm"]
+streams_count = 4
+stream_0/stream = ExtResource("10_gx1jg")
+stream_1/stream = ExtResource("11_ugbui")
+stream_2/stream = ExtResource("12_fcs02")
+stream_3/stream = ExtResource("13_myrg7")
+
+[sub_resource type="Resource" id="Resource_fm80t"]
+script = ExtResource("9_5gtgg")
+group = "rock"
+streams = SubResource("AudioStreamRandomizer_kvlxm")
+metadata/_custom_type_script = "uid://7b25v6m0amq7"
+
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("cam")]
 script = ExtResource("1_gmlin")
 cam = NodePath("Camera3D")
@@ -68,6 +92,10 @@ spot_angle = 38.95
 [node name="Timer" type="Timer" parent="."]
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." node_paths=PackedStringArray("player")]
-stream = SubResource("AudioStreamRandomizer_5gtgg")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.369323, 0)
+volume_db = -39.505
+panning_strength = 0.58
+attenuation_filter_db = -12.0
 script = ExtResource("4_lvxji")
 player = NodePath("..")
+step_groups = Array[ExtResource("9_5gtgg")]([SubResource("Resource_je7p5"), SubResource("Resource_fm80t")])

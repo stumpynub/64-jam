@@ -70,7 +70,7 @@ uv1_triplanar = true
 [sub_resource type="SphereShape3D" id="SphereShape3D_8a0f1"]
 radius = 4.99909
 
-[node name="LevelProtoRail" type="Node3D"]
+[node name="LevelProtoRail3" type="Node3D"]
 script = ExtResource("1_wbjnu")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -161,31 +161,12 @@ metadata/_custom_type_script = "uid://dqqqs6ttay8po"
 
 [node name="level_car" parent="NavigationRegion3D/Geo" instance=ExtResource("7_2n6n2")]
 
+[node name="StaticBody3D" parent="NavigationRegion3D/Geo/level_car/Cube " index="0" groups=["rock"]]
+
 [node name="Plane " parent="NavigationRegion3D/Geo/level_car" index="1"]
 material_override = SubResource("StandardMaterial3D_5m73a")
 
-[node name="Mountains" type="Node3D" parent="NavigationRegion3D"]
-
-[node name="Sprite3D" type="Sprite3D" parent="NavigationRegion3D/Mountains"]
-transform = Transform3D(2.16562, 0, 0, 0, 2.16562, 0, 0, 0, 2.16562, 0, 39.3563, 214.695)
-pixel_size = 1.0
-alpha_cut = 1
-texture_filter = 0
-texture = ExtResource("11_7rvgd")
-
-[node name="Sprite3D2" type="Sprite3D" parent="NavigationRegion3D/Mountains"]
-transform = Transform3D(1.88322, 0, 1.0693, 0, 3.12591, 0, -1.0693, 0, 1.88322, 130.23, 39.3563, 214.695)
-pixel_size = 1.0
-alpha_cut = 1
-texture_filter = 0
-texture = ExtResource("11_7rvgd")
-
-[node name="Sprite3D3" type="Sprite3D" parent="NavigationRegion3D/Mountains"]
-transform = Transform3D(2.69295, 0, -1.59349, 0, 3.12591, 0, 2.9261, 0, 1.46652, -189.979, 39.3563, 214.695)
-pixel_size = 1.0
-alpha_cut = 1
-texture_filter = 0
-texture = ExtResource("11_7rvgd")
+[node name="StaticBody3D" parent="NavigationRegion3D/Geo/level_car/Plane " index="0" groups=["snow"]]
 
 [node name="Rock" parent="NavigationRegion3D" instance=ExtResource("7_jlx1j")]
 transform = Transform3D(0.80569, 0, 0, 0, 0.80569, 0, 0, 0, 0.80569, 16.3173, 0.223885, -2.52193)
@@ -286,6 +267,30 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.08998, -0.975121, -14.7812)
 
 [node name="Tree15" parent="PropsNoNav" instance=ExtResource("12_dcxb8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4265, -0.975124, -9.25741)
+
+[node name="Mountains" type="Node3D" parent="PropsNoNav"]
+transform = Transform3D(2.46878, 0, 0, 0, 2.46878, 0, 0, 0, 2.46878, 0, 0, 0)
+
+[node name="Sprite3D" type="Sprite3D" parent="PropsNoNav/Mountains"]
+transform = Transform3D(2.16562, 0, 0, 0, 2.16562, 0, 0, 0, 2.16562, 0, 39.3563, 214.695)
+pixel_size = 1.0
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("11_7rvgd")
+
+[node name="Sprite3D2" type="Sprite3D" parent="PropsNoNav/Mountains"]
+transform = Transform3D(1.88322, 0, 1.0693, 0, 3.12591, 0, -1.0693, 0, 1.88322, 130.23, 39.3563, 214.695)
+pixel_size = 1.0
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("11_7rvgd")
+
+[node name="Sprite3D3" type="Sprite3D" parent="PropsNoNav/Mountains"]
+transform = Transform3D(2.69295, 0, -1.59349, 0, 3.12591, 0, 2.9261, 0, 1.46652, -189.979, 39.3563, 214.695)
+pixel_size = 1.0
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("11_7rvgd")
 
 [node name="TransitionPortal" type="Area3D" parent="."]
 transform = Transform3D(0.355952, -0.188675, 0.915259, 0, 0.979406, 0.201899, -0.934504, -0.0718662, 0.348622, 4.28034, 3.02435, 48.5552)

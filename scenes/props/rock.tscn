@@ -13,6 +13,8 @@ albedo_texture = ExtResource("2_1i8qa")
 [node name="Cube " parent="rock" index="0"]
 material_override = SubResource("StandardMaterial3D_s3df6")
 
+[node name="StaticBody3D" parent="rock/Cube " index="0" groups=["rock"]]
+
 [node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="."]
 radius = 1.66
 affect_navigation_mesh = true

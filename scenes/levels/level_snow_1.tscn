@@ -180,7 +180,7 @@ transform = Transform3D(2.46878, 0, 0, 0, 2.46878, 0, 0, 0, 2.46878, 0, 0, 0)
 [node name="Plane" parent="NavigationRegion3D/Geo/level_1" index="0"]
 material_override = SubResource("StandardMaterial3D_mjc44")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Geo/level_1/Plane" index="0"]
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Geo/level_1/Plane" index="0" groups=["snow"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Geo/level_1/Plane/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_bwpd2")

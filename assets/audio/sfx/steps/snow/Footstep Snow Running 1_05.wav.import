@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dlx7likjyk84n"
+path="res://.godot/imported/Footstep Snow Running 1_05.wav-104e8dd2ef60ab8a415bf1d6afaa14cf.sample"
+
+[deps]
+
+source_file="res://assets/audio/sfx/steps/snow/Footstep Snow Running 1_05.wav"
+dest_files=["res://.godot/imported/Footstep Snow Running 1_05.wav-104e8dd2ef60ab8a415bf1d6afaa14cf.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
