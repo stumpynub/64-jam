@@ -66,8 +66,6 @@ texture = ExtResource("6_j84w5")
 
 [node name="Effects" type="CanvasLayer" parent="."]
 
-[node name="Timer" type="Timer" parent="Effects"]
-
 [node name="Control" type="Control" parent="Effects"]
 layout_mode = 3
 anchors_preset = 15
@@ -91,7 +89,5 @@ mouse_filter = 2
 
 [node name="cave " parent="cave" index="0"]
 material_override = SubResource("StandardMaterial3D_hebdk")
-
-[connection signal="timeout" from="Effects/Timer" to="CharacterBody3D" method="_on_timer_timeout"]
 
 [editable path="cave"]
