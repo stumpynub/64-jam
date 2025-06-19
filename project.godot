@@ -14,6 +14,10 @@ config/name="64 Jam"
 run/main_scene="uid://b0mmyofiytdkj"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
+[autoload]
+
+SceneTransition="*res://scenes/ui/scene_transition.tscn"
+
 [input]
 
 ui_cancel={

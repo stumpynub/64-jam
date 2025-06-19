@@ -5,6 +5,7 @@ extends Control
 @onready var margin_container = $MarginContainer as MarginContainer
 
 @export var start_level_uid: String
+@export var intro_screen_uid: String
 
 func _ready() -> void:
 	# Connect signal from options_menu to receive button presses
@@ -14,9 +15,8 @@ func _ready() -> void:
 
 # Starts the game
 func _on_start_pressed() -> void:
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	if ResourceLoader.get_resource_uid(start_level_uid) == -1: return 
-	get_tree().change_scene_to_file(start_level_uid)
+	if ResourceLoader.get_resource_uid(intro_screen_uid) == -1: return 
+	SceneTransition.change_scene(intro_screen_uid)
 
 #Opens up options
 func _on_options_pressed() -> void:
