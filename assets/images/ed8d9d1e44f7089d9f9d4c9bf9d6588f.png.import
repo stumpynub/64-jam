@@ -2,27 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vyevpqjyqrxo"
-path.s3tc="res://.godot/imported/Small creature Base Color.png-b6ca92d50d373bde702c3ed6971a08d8.s3tc.ctex"
+uid="uid://dbfn8drd66xjr"
+path="res://.godot/imported/ed8d9d1e44f7089d9f9d4c9bf9d6588f.png-1aec994113ae1c6abb86b927ca868610.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/meshes/characters/textures/Small creature Base Color.png"
-dest_files=["res://.godot/imported/Small creature Base Color.png-b6ca92d50d373bde702c3ed6971a08d8.s3tc.ctex"]
+source_file="res://assets/images/ed8d9d1e44f7089d9f9d4c9bf9d6588f.png"
+dest_files=["res://.godot/imported/ed8d9d1e44f7089d9f9d4c9bf9d6588f.png-1aec994113ae1c6abb86b927ca868610.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -32,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
