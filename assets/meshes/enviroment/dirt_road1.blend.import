@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bqddnwss5egag"
-path="res://.godot/imported/Sign.blend-b920b630d67049ff5a249246534344dd.scn"
+uid="uid://b00jrysw6v5jb"
+path="res://.godot/imported/dirt_road1.blend-40864d51b0966d0701656063aa4cca39.scn"
 
 [deps]
 
-source_file="res://assets/meshes/characters/Sign.blend"
-dest_files=["res://.godot/imported/Sign.blend-b920b630d67049ff5a249246534344dd.scn"]
+source_file="res://assets/meshes/enviroment/dirt_road1.blend"
+dest_files=["res://.godot/imported/dirt_road1.blend-40864d51b0966d0701656063aa4cca39.scn"]
 
 [params]
 

@@ -22,9 +22,9 @@ func _increaseFearMeter(value, distance) -> void:
 
 	#Creates the multiplier to change the rate the meter fills
 	if fearMeter.value <= 25:
-		fearmultiplier = 2.5
+		fearmultiplier = 3
 	elif fearMeter.value < 75:
-		fearmultiplier = 1.5
+		fearmultiplier = 1
 	elif fearMeter.value < 90:
 		fearmultiplier = 2
 		

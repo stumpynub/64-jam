@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhxnb4vwofc7n"]
+
+[ext_resource type="PackedScene" uid="uid://cc8i3jiggokdh" path="res://assets/meshes/enviroment/Mount Chinook Sign.glb" id="1_vwc7h"]
+
+[node name="Mount Chinook Sign" type="Node3D"]
+
+[node name="Mount Chinook Sign" parent="." instance=ExtResource("1_vwc7h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0575128, 0, 0.021184)

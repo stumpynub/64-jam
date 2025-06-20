@@ -99,3 +99,5 @@ attenuation_filter_db = -12.0
 script = ExtResource("4_lvxji")
 player = NodePath("..")
 step_groups = Array[ExtResource("9_5gtgg")]([SubResource("Resource_je7p5"), SubResource("Resource_fm80t")])
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

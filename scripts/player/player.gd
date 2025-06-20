@@ -1,7 +1,7 @@
 class_name Player extends CharacterBody3D
 
 
-const SPEED = 5.0
+const SPEED = 50.0
 const JUMP_VELOCITY = 4.5
 enum fearstates {fear0, fear1, fear2, fear3, fear4}
 
@@ -80,16 +80,19 @@ func fearMeter(distance):
 		UI._decreaseFearMeter()
 
 func determine_distance_multiplier(distance):
+	print(distance)
 	if distance >= 100:
+		return 100
+	elif distance > 75:
+		return 80
+	elif distance > 50:
+		return 60
+	elif distance > 25:
 		return 10
-	elif distance < 100:
+	elif distance > 10:
 		return 8
-	elif distance < 50:
+	else:
 		return 6
-	elif distance < 25:
-		return 0.5
-	elif distance < 10:
-		return 0.25
 
 func toggle_flashlight(): 
 	flashlight.visible = !flashlight.visible

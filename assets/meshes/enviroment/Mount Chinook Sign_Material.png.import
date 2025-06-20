@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbfn8drd66xjr"
-path.s3tc="res://.godot/imported/ed8d9d1e44f7089d9f9d4c9bf9d6588f.png-1aec994113ae1c6abb86b927ca868610.s3tc.ctex"
+uid="uid://62m14b0kgiql"
+path.s3tc="res://.godot/imported/Mount Chinook Sign_Material.png-b00ea878e7e25a0a8d27b17c7849cf41.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "49bf0114b46f94eea32b415c4a0e7cc7"
+}
 
 [deps]
 
-source_file="res://assets/images/ed8d9d1e44f7089d9f9d4c9bf9d6588f.png"
-dest_files=["res://.godot/imported/ed8d9d1e44f7089d9f9d4c9bf9d6588f.png-1aec994113ae1c6abb86b927ca868610.s3tc.ctex"]
+source_file="res://assets/meshes/enviroment/Mount Chinook Sign_Material.png"
+dest_files=["res://.godot/imported/Mount Chinook Sign_Material.png-b00ea878e7e25a0a8d27b17c7849cf41.s3tc.ctex"]
 
 [params]
 
