@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cmi0dc5ro4vv0"]
+
+[ext_resource type="Script" uid="uid://dtq0cjgq3d04x" path="res://scene_change.gd" id="1_oa22y"]
+[ext_resource type="Texture2D" uid="uid://b6uwtfmxbsgv7" path="res://assets/images/pine.png" id="2_t2uqt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tnulj"]
+albedo_texture = ExtResource("2_t2uqt")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_j0dvx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gl1yk"]
+
+[node name="door" type="Node3D"]
+script = ExtResource("1_oa22y")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_tnulj")
+mesh = SubResource("ArrayMesh_j0dvx")
+
+[node name="Area3D" type="Area3D" parent="MeshInstance3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/Area3D"]
+shape = SubResource("BoxShape3D_gl1yk")
+
+[connection signal="area_entered" from="MeshInstance3D/Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="body_entered" from="MeshInstance3D/Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="ready" from="MeshInstance3D/Area3D" to="." method="_on_area_3d_ready"]

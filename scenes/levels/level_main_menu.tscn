@@ -42,8 +42,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8clyu")
-start_level_uid = "uid://3gp3glrtcns3"
-intro_screen_uid = "uid://cpkewh3uvbu3l"
+start_level_uid = "uid://0ptit6n3gwi3"
+intro_screen_uid = "uid://0ptit6n3gwi3"
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 2

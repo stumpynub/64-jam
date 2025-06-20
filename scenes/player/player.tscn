@@ -66,6 +66,7 @@ streams = SubResource("AudioStreamRandomizer_kvlxm")
 metadata/_custom_type_script = "uid://7b25v6m0amq7"
 
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("cam")]
+collision_layer = 3
 script = ExtResource("1_gmlin")
 cam = NodePath("Camera3D")
 
