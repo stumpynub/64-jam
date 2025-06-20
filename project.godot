@@ -18,6 +18,12 @@ config/features=PackedStringArray("4.4", "GL Compatibility")
 
 SceneTransition="*res://scenes/ui/scene_transition.tscn"
 
+[importer_defaults]
+
+animation_library={
+&"blender/meshes/colors": true
+}
+
 [input]
 
 ui_cancel={
