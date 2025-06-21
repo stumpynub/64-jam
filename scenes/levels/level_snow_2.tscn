@@ -898,21 +898,18 @@ transform = Transform3D(-0.975565, -0.0993995, -0.195925, -1.49011e-08, 0.891791
 progress = 3.42538
 
 [node name="small_creature" parent="Path3D/PathFollow3D" instance=ExtResource("17_mkd6d")]
-transform = Transform3D(0.231468, -0.0944603, 0, 0.0944603, 0.231468, 0, 0, 0, 0.25, 0, 0, 0)
 
 [node name="PathFollow3D2" type="PathFollow3D" parent="Path3D"]
 transform = Transform3D(-0.975565, -0.0993995, -0.195925, -1.49011e-08, 0.891791, -0.45244, 0.219697, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
 progress = 3.42538
 
 [node name="small_creature" parent="Path3D/PathFollow3D2" instance=ExtResource("17_mkd6d")]
-transform = Transform3D(0.231468, -0.0944603, 0, 0.0944603, 0.231468, 0, 0, 0, 0.25, 0, 0, 0)
 
 [node name="PathFollow3D3" type="PathFollow3D" parent="Path3D"]
 transform = Transform3D(-0.975565, -0.0993995, -0.195925, -1.49011e-08, 0.891791, -0.45244, 0.219697, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
 progress = 3.42538
 
 [node name="small_creature" parent="Path3D/PathFollow3D3" instance=ExtResource("17_mkd6d")]
-transform = Transform3D(0.231468, -0.0944603, 0, 0.0944603, 0.231468, 0, 0, 0, 0.25, 0, 0, 0)
 
 [connection signal="screen_entered" from="NavigationRegion3D/AI/VisibleOnScreenNotifier3D" to="NavigationRegion3D/AI" method="_on_visible_on_screen_notifier_3d_screen_entered"]
 [connection signal="screen_exited" from="NavigationRegion3D/AI/VisibleOnScreenNotifier3D" to="NavigationRegion3D/AI" method="_on_visible_on_screen_notifier_3d_screen_exited"]
