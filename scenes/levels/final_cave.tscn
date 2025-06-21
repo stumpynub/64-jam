@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://wnvdaab12cbf"]
+
+[ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="1_fmfig"]
+[ext_resource type="PackedScene" uid="uid://hsth5xuvay8c" path="res://scripts/player/another_cave.tscn" id="3_1tull"]
+[ext_resource type="PackedScene" uid="uid://cyxu27fdomlhe" path="res://scenes/ui/UI.tscn" id="3_teipy"]
+
+[node name="final_cave" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_fmfig")]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.06244, -3.62526, 1.51737)
+
+[node name="UI" parent="Player" instance=ExtResource("3_teipy")]
+unique_name_in_owner = true
+
+[node name="another_cave" parent="." instance=ExtResource("3_1tull")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.59339, -3.42975, 1.32822)

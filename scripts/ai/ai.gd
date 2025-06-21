@@ -28,7 +28,7 @@ func _physics_process(delta: float) -> void:
 func look_at_target(): 
 	if velocity.is_equal_approx(Vector3.ZERO): return 
 	
-	var flat_vel = Vector3(velocity.x, 0, velocity.z)
+	var flat_vel = Vector3(-velocity.x, 0, velocity.z)
 	basis = basis.slerp(
 		basis.looking_at(flat_vel, Vector3.UP), 
 		0.2

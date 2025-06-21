@@ -1,22 +1,22 @@
-[gd_scene load_steps=25 format=3 uid="uid://b6ib3d7qycygh"]
+[gd_scene load_steps=25 format=3 uid="uid://brvu3s3ji54ux"]
 
-[ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/level_base.gd" id="1_6467n"]
-[ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_ojhfn"]
-[ext_resource type="PackedScene" uid="uid://by8441uclwbqn" path="res://assets/meshes/enviroment/terrain/level_1.glb" id="3_ayfo3"]
-[ext_resource type="PackedScene" uid="uid://cyxu27fdomlhe" path="res://UI.tscn" id="3_ojhfn"]
-[ext_resource type="Script" uid="uid://fsqdfpvilumv" path="res://scripts/auto_nav.gd" id="4_86hgv"]
-[ext_resource type="Texture2D" uid="uid://18jic4h0ib1i" path="res://assets/images/textures/snow1.png" id="4_pj7dd"]
-[ext_resource type="PackedScene" uid="uid://yobuf1b62vpp" path="res://scenes/props/rock.tscn" id="6_rdbh4"]
-[ext_resource type="PackedScene" uid="uid://s81dl61row4j" path="res://scenes/ai/ai.tscn" id="7_ayfo3"]
-[ext_resource type="PackedScene" uid="uid://xgaxudaiseg7" path="res://assets/meshes/enviroment/border.glb" id="8_pj7dd"]
-[ext_resource type="Texture2D" uid="uid://rkx1iuyicok4" path="res://assets/images/mnt.png" id="9_ks82v"]
-[ext_resource type="Script" uid="uid://dqqqs6ttay8po" path="res://scripts/tools/scatter_tool.gd" id="9_rdbh4"]
-[ext_resource type="PackedScene" uid="uid://bph01dvfply2g" path="res://scenes/props/pine.tscn" id="11_4nddg"]
-[ext_resource type="PackedScene" uid="uid://brex0ogvbjhf5" path="res://scenes/props/cave_entrance.tscn" id="13_8drim"]
-[ext_resource type="PackedScene" uid="uid://ddy60oe4561bs" path="res://assets/meshes/car1/car1.glb" id="13_viecc"]
-[ext_resource type="PackedScene" uid="uid://cnag1eais2u17" path="res://assets/meshes/road/road.blend" id="14_8ytks"]
-[ext_resource type="PackedScene" uid="uid://cmi0dc5ro4vv0" path="res://scenes/levels/scene_changer.tscn" id="16_birli"]
-[ext_resource type="PackedScene" uid="uid://csmtp1fwk3rpe" path="res://scenes/player/small_creature.tscn" id="17_mkd6d"]
+[ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/level_base.gd" id="1_7gp8n"]
+[ext_resource type="PackedScene" uid="uid://b0mmyofiytdkj" path="res://scenes/levels/level_main_menu.tscn" id="2_gdcvq"]
+[ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_hebdk"]
+[ext_resource type="PackedScene" uid="uid://cyxu27fdomlhe" path="res://UI.tscn" id="3_odhmk"]
+[ext_resource type="Script" uid="uid://fsqdfpvilumv" path="res://scripts/auto_nav.gd" id="4_gdcvq"]
+[ext_resource type="Script" uid="uid://dqqqs6ttay8po" path="res://scripts/tools/scatter_tool.gd" id="5_y2ttv"]
+[ext_resource type="PackedScene" uid="uid://yobuf1b62vpp" path="res://scenes/props/rock.tscn" id="6_djhkt"]
+[ext_resource type="PackedScene" uid="uid://by8441uclwbqn" path="res://assets/meshes/enviroment/terrain/level_1.glb" id="7_p8l7r"]
+[ext_resource type="Texture2D" uid="uid://18jic4h0ib1i" path="res://assets/images/textures/snow1.png" id="8_2arew"]
+[ext_resource type="PackedScene" uid="uid://cmi0dc5ro4vv0" path="res://scenes/levels/scene_changer.tscn" id="8_ygfxh"]
+[ext_resource type="PackedScene" uid="uid://xgaxudaiseg7" path="res://assets/meshes/enviroment/border.glb" id="9_w62eu"]
+[ext_resource type="Texture2D" uid="uid://rkx1iuyicok4" path="res://assets/images/mnt.png" id="10_g5b8e"]
+[ext_resource type="PackedScene" uid="uid://bph01dvfply2g" path="res://scenes/props/pine.tscn" id="11_tl0ru"]
+[ext_resource type="PackedScene" uid="uid://ddy60oe4561bs" path="res://assets/meshes/car1/car1.glb" id="12_5rjsf"]
+[ext_resource type="PackedScene" uid="uid://cnag1eais2u17" path="res://assets/meshes/road/road.blend" id="13_ot4hx"]
+[ext_resource type="PackedScene" uid="uid://brex0ogvbjhf5" path="res://scenes/props/cave_entrance.tscn" id="14_833b3"]
+[ext_resource type="PackedScene" uid="uid://csmtp1fwk3rpe" path="res://scenes/player/small_creature.tscn" id="16_gelit"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tortc"]
 sky_top_color = Color(0.0562731, 0.208392, 0.347208, 1)
@@ -44,7 +44,7 @@ polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(5, 4, 3), PackedInt32Arr
 sample_partition_type = 2
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mjc44"]
-albedo_texture = ExtResource("4_pj7dd")
+albedo_texture = ExtResource("8_2arew")
 uv1_scale = Vector3(-0.045, -0.045, -0.045)
 uv1_triplanar = true
 uv1_world_triplanar = true
@@ -62,7 +62,9 @@ point_count = 115
 
 [node name="LevelProtoRail" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6272, 0, 0)
-script = ExtResource("1_6467n")
+script = ExtResource("1_7gp8n")
+
+[node name="MainMenu" parent="." instance=ExtResource("2_gdcvq")]
 
 [node name="Enviro" type="Node3D" parent="."]
 
@@ -74,33 +76,27 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Enviro"]
 environment = SubResource("Environment_ksw18")
 
-[node name="Player" parent="." instance=ExtResource("2_ojhfn")]
+[node name="Player" parent="." instance=ExtResource("2_hebdk")]
 unique_name_in_owner = true
-transform = Transform3D(0.284618, 0, -0.958641, 0, 1, 0, 0.958641, 0, 0.284618, -57.6887, -0.379947, 21.6222)
+transform = Transform3D(0.999001, 0, -0.0446829, 0.0151747, 0.940567, 0.339269, 0.0420273, -0.339608, 0.939627, 25.291, 7.70475, 47.0213)
 
-[node name="UI" parent="Player" instance=ExtResource("3_ojhfn")]
+[node name="UI" parent="Player" instance=ExtResource("3_odhmk")]
 unique_name_in_owner = true
+visible = false
 metadata/_edit_use_anchors_ = true
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 transform = Transform3D(2.46878, 0, 0, 0, 2.46878, 0, 0, 0, 2.46878, 0, 0, 0)
 navigation_mesh = SubResource("NavigationMesh_ojhfn")
-script = ExtResource("4_86hgv")
+script = ExtResource("4_gdcvq")
 generate_wait_time = 0.1
-
-[node name="AI" parent="NavigationRegion3D" node_paths=PackedStringArray("target") instance=ExtResource("7_ayfo3")]
-unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9807, 0.574428, 16.7088)
-target = NodePath("../../Player")
-
-[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="NavigationRegion3D/AI"]
 
 [node name="Geo" type="Node3D" parent="NavigationRegion3D"]
 transform = Transform3D(0.405058, 0, 0, 0, 0.405058, 0, 0, 0, 0.405058, 0, 0, 0)
 
 [node name="ScatterRocks" type="Node3D" parent="NavigationRegion3D/Geo"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.41454, 0)
-script = ExtResource("9_rdbh4")
+script = ExtResource("5_y2ttv")
 scene_uid = "uid://yobuf1b62vpp"
 amount = 25
 radius = 100
@@ -115,61 +111,61 @@ min_z_rotation = -360.0
 max_z_rotation = 360.0
 metadata/_custom_type_script = "uid://dqqqs6ttay8po"
 
-[node name="Rock" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="Rock" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-6.6242, 3.71482, -4.81723, -1.81167, -8.0035, -3.68069, -5.80719, -1.74061, 6.64322, -6.37093, -10.1667, 76.6696)
 
-[node name="@Node3D@327513" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327513" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-1.64719, -8.22521, -2.44531, 0.817629, 2.32819, -8.382, 8.54196, -1.80896, 0.330776, 81.2102, -9.61618, 15.6861)
 
-[node name="@Node3D@327514" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327514" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(4.41469, 5.08632, 1.5143, -0.913101, 2.66838, -6.30073, -5.22781, 3.82915, 2.37927, 61.2444, -8.10007, 47.9116)
 
-[node name="@Node3D@327515" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327515" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(2.29984, 2.23359, -9.26036, -4.54445, 8.62974, 0.952858, 8.37205, 4.07075, 3.06109, 52.9721, -9.14862, -34.1103)
 
-[node name="@Node3D@327517" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327517" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-0.499605, -5.87251, -0.529478, 0.473863, -0.569646, 5.87088, -5.87726, 0.453273, 0.518359, 4.23105, -8.8308, -27.6322)
 
-[node name="@Node3D@327519" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327519" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(3.65576, 6.30895, -2.3136, 6.71572, -3.33859, 1.50763, 0.233652, -2.75156, -7.13403, 51.7069, -10.9917, 10.3221)
 
-[node name="@Node3D@327521" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327521" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-4.8947, 0.159315, -4.55735, 1.44024, 6.39748, -1.32321, 4.32672, -1.94931, -4.71514, -41.0482, -9.28924, -16.0463)
 
-[node name="@Node3D@327522" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327522" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(6.06973, 5.0675, 4.95409, 5.72791, 0.332865, -7.3583, -4.17297, 7.82776, -2.89425, -36.0982, -30.6612, 39.6394)
 
-[node name="@Node3D@327523" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327523" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-0.614595, -7.36716, 2.42403, -0.167613, 2.44368, 7.38438, -7.75389, 0.531117, -0.351761, -62.0583, -12.9523, -22.4296)
 
-[node name="@Node3D@327524" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327524" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-3.80597, -6.33925, -2.51008, -6.73743, 3.93772, 0.271015, 1.04579, 2.29789, -7.38905, 34.5574, -8.33458, -21.9699)
 
-[node name="@Node3D@327526" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327526" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-3.11621, -2.41654, -5.12189, 4.12216, -4.97659, -0.159974, -3.88346, -3.34337, 3.94016, -18.1482, -8.55582, -41.2934)
 
-[node name="@Node3D@327527" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327527" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-7.0146, -0.89623, 0.398974, -0.779694, 3.34494, -6.19439, 0.595387, -6.1786, -3.41136, 68.5372, -7.90472, -48.0898)
 
-[node name="@Node3D@327528" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327528" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-2.3531, 2.93491, -4.2877, 0.862953, 4.86227, 2.85461, 5.12381, 0.528947, -2.4499, 7.67865, -11.523, 34.9292)
 
-[node name="@Node3D@327529" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327529" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(5.14616, -4.02794, 2.17971, -2.06246, 0.889257, 6.5126, -4.08923, -5.51755, -0.541615, -56.4605, -10.3052, -45.0421)
 
-[node name="@Node3D@327531" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327531" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(1.60826, 7.79933, -2.1542, -1.80487, -1.79521, -7.84705, -7.88749, 2.00107, 1.35638, -55.8452, -9.09681, 55.9561)
 
-[node name="@Node3D@327533" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327533" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(5.62485, -0.424667, 0.856677, -0.920382, -1.01949, 5.53775, -0.259104, -5.59763, -1.07358, 15.3583, -9.99323, -50.6614)
 
-[node name="@Node3D@327535" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327535" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-0.117158, -7.1597, -3.94691, -0.975642, 3.93135, -7.10251, 8.11711, 0.369193, -0.910659, -10.7317, -10.2212, -81.1912)
 
-[node name="@Node3D@327536" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_rdbh4")]
+[node name="@Node3D@327536" parent="NavigationRegion3D/Geo/ScatterRocks" instance=ExtResource("6_djhkt")]
 transform = Transform3D(-6.07132, 3.53019, -1.56399, 3.45216, 3.65759, -5.14528, -1.72943, -5.09205, -4.78009, 12.1639, -9.93815, -45.3115)
 
-[node name="level_1" parent="NavigationRegion3D/Geo" instance=ExtResource("3_ayfo3")]
+[node name="level_1" parent="NavigationRegion3D/Geo" instance=ExtResource("7_p8l7r")]
 transform = Transform3D(2.46878, 0, 0, 0, 2.46878, 0, 0, 0, 2.46878, 0, 0, 0)
 
 [node name="Plane" parent="NavigationRegion3D/Geo/level_1" index="0"]
@@ -180,7 +176,7 @@ material_override = SubResource("StandardMaterial3D_mjc44")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Geo/level_1/Plane/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_bwpd2")
 
-[node name="border" parent="NavigationRegion3D" instance=ExtResource("8_pj7dd")]
+[node name="border" parent="NavigationRegion3D" instance=ExtResource("9_w62eu")]
 transform = Transform3D(0.515527, 0, 0, 0, 0.583248, 0, 0, 0, 0.515527, 0, -1.08528, 0)
 
 [node name="Mountains" type="Node3D" parent="NavigationRegion3D"]
@@ -190,643 +186,643 @@ transform = Transform3D(2.16562, 0, 0, 0, 2.16562, 0, 0, 0, 2.16562, 0, 39.3563,
 pixel_size = 1.0
 alpha_cut = 1
 texture_filter = 0
-texture = ExtResource("9_ks82v")
+texture = ExtResource("10_g5b8e")
 
 [node name="Sprite3D2" type="Sprite3D" parent="NavigationRegion3D/Mountains"]
 transform = Transform3D(1.88322, 0, 1.0693, 0, 3.12591, 0, -1.0693, 0, 1.88322, 130.23, 39.3563, 214.695)
 pixel_size = 1.0
 alpha_cut = 1
 texture_filter = 0
-texture = ExtResource("9_ks82v")
+texture = ExtResource("10_g5b8e")
 
 [node name="Sprite3D3" type="Sprite3D" parent="NavigationRegion3D/Mountains"]
 transform = Transform3D(2.69295, 0, -1.59349, 0, 3.12591, 0, 2.9261, 0, 1.46652, -189.979, 39.3563, 214.695)
 pixel_size = 1.0
 alpha_cut = 1
 texture_filter = 0
-texture = ExtResource("9_ks82v")
+texture = ExtResource("10_g5b8e")
 
 [node name="PropsNoNav" type="Node3D" parent="."]
 
 [node name="ScatteTrees" type="Node3D" parent="PropsNoNav"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 31.695, 0)
-script = ExtResource("9_rdbh4")
+script = ExtResource("5_y2ttv")
 scene_uid = "uid://bph01dvfply2g"
 amount = 200
 radius = 500
 exlude_groups = Array[String](["rock"])
 
-[node name="Tree" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="Tree" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.5046, -34.984, 79.1463)
 
-[node name="@Node3D@37359" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37359" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.3836, -34.6444, 41.0271)
 
-[node name="@Node3D@37360" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37360" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.01598, -36.3471, 70.0547)
 
-[node name="@Node3D@37361" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37361" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.3244, -35.4629, 68.6874)
 
-[node name="@Node3D@37362" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37362" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.0461, -32.1216, -29.0621)
 
-[node name="@Node3D@37363" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37363" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.839176, -36.4063, 52.4988)
 
-[node name="@Node3D@37364" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37364" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.7069, -32.5336, -61.1246)
 
-[node name="@Node3D@37365" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37365" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.8163, -35.3641, 1.38706)
 
-[node name="@Node3D@37366" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37366" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.4398, -31.7837, -71.3758)
 
-[node name="@Node3D@37367" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37367" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.7844, -32.8805, -52.7264)
 
-[node name="@Node3D@37368" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37368" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.5121, -34.6151, 71.6498)
 
-[node name="@Node3D@37369" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37369" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.1174, -35.8014, -64.368)
 
-[node name="@Node3D@37370" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37370" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9696, -30.0075, -66.7007)
 
-[node name="@Node3D@37371" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37371" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.4746, -30.4961, -84.8077)
 
-[node name="@Node3D@37372" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37372" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.6435, -29.1859, -87.0186)
 
-[node name="@Node3D@37373" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37373" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6502, -33.5285, -47.6461)
 
-[node name="@Node3D@37374" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37374" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.2594, -33.1421, -52.5095)
 
-[node name="@Node3D@37375" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37375" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.4041, -34.205, 34.5736)
 
-[node name="@Node3D@37376" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37376" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80.8817, -32.3724, 55.4782)
 
-[node name="@Node3D@37377" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37377" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.6743, -33.0376, -45.5767)
 
-[node name="@Node3D@37378" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37378" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.82836, -36.4877, 31.361)
 
-[node name="@Node3D@37379" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37379" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.5182, -27.7079, -95.4449)
 
-[node name="@Node3D@37380" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37380" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.6441, -37.1786, -70.5183)
 
-[node name="@Node3D@37381" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37381" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.0962, -34.5935, 74.7432)
 
-[node name="@Node3D@37382" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37382" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -96.8666, -30.2153, 65.4013)
 
-[node name="@Node3D@37383" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37383" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.8451, -33.3166, 26.1077)
 
-[node name="@Node3D@37384" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37384" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.8689, -32.183, 51.4326)
 
-[node name="@Node3D@37385" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37385" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.49969, -35.4147, 12.9691)
 
-[node name="@Node3D@37386" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37386" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -71.9143, -39.5484, -27.6518)
 
-[node name="@Node3D@37387" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37387" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.97805, -36.0472, 52.8966)
 
-[node name="@Node3D@37388" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37388" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.4126, -32.392, 50.0473)
 
-[node name="@Node3D@37389" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37389" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.3978, -24.1267, 21.5806)
 
-[node name="@Node3D@37390" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37390" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.12065, -32.9193, -65.1176)
 
-[node name="@Node3D@37391" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37391" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.8445, -34.783, -57.8426)
 
-[node name="@Node3D@37392" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37392" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.813, -34.7619, -70.653)
 
-[node name="@Node3D@37393" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37393" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.9784, -34.5303, 3.49774)
 
-[node name="@Node3D@37394" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37394" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5659, -34.1597, 87.8579)
 
-[node name="@Node3D@37395" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37395" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97.1549, -32.3095, -60.7484)
 
-[node name="@Node3D@37396" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37396" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.3951, -29.0332, -13.4182)
 
-[node name="@Node3D@37397" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37397" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.4218, -35.608, -9.73672)
 
-[node name="@Node3D@37398" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37398" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.2851, -32.6834, -58.6047)
 
-[node name="@Node3D@37399" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37399" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.2021, -31.8738, 4.68334)
 
-[node name="@Node3D@37400" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37400" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.0531, -34.0682, 76.7564)
 
-[node name="@Node3D@37401" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37401" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 83.9942, -29.5409, -65.427)
 
-[node name="@Node3D@37402" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37402" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.0643, -35.9732, -4.84731)
 
-[node name="@Node3D@37403" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37403" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.911, -34.7968, 46.055)
 
-[node name="@Node3D@37404" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37404" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.4984, -30.8643, -78.23)
 
-[node name="@Node3D@37405" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37405" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.3702, -27.9172, -50.2563)
 
-[node name="@Node3D@37406" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37406" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.6752, -33.0206, 96.0922)
 
-[node name="@Node3D@37407" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37407" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9526, -33.82, -1.3703)
 
-[node name="@Node3D@37408" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37408" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.6795, -29.2722, 98.0759)
 
-[node name="@Node3D@37409" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37409" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.3743, -26.5504, 0.311969)
 
-[node name="@Node3D@37410" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37410" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7194, -33.6733, -41.3115)
 
-[node name="@Node3D@37411" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37411" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.1772, -32.7339, -60.3191)
 
-[node name="@Node3D@37412" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37412" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.6054, -32.7826, 27.6097)
 
-[node name="@Node3D@37413" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37413" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.7148, -32.6979, -31.1113)
 
-[node name="@Node3D@37414" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37414" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2643, -32.2666, -47.2511)
 
-[node name="@Node3D@37415" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37415" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.1889, -32.6831, 28.3473)
 
-[node name="@Node3D@37416" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37416" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.1145, -29.4424, 97.1815)
 
-[node name="@Node3D@37417" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37417" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4263, -34.4349, 1.9347)
 
-[node name="@Node3D@37418" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37418" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.3711, -31.6873, -68.0529)
 
-[node name="@Node3D@37419" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37419" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.0879, -33.3363, -78.5517)
 
-[node name="@Node3D@37420" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37420" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.42925, -33.0517, -9.57718)
 
-[node name="@Node3D@37421" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37421" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.2024, -28.7779, -12.6211)
 
-[node name="@Node3D@37422" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37422" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.1043, -31.9371, -75.2936)
 
-[node name="@Node3D@37423" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37423" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.327, -32.2618, 43.331)
 
-[node name="@Node3D@37424" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37424" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.80798, -35.6324, 19.3512)
 
-[node name="@Node3D@37425" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37425" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.2197, -32.5041, 32.547)
 
-[node name="@Node3D@37426" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37426" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.3709, -34.9445, 44.2639)
 
-[node name="@Node3D@37427" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37427" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5342, -33.3589, 8.77289)
 
-[node name="@Node3D@37428" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37428" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.303, -27.9588, -79.4983)
 
-[node name="@Node3D@37429" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37429" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.2623, -32.8319, -67.7553)
 
-[node name="@Node3D@37430" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37430" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.031, -33.3318, 8.10768)
 
-[node name="@Node3D@37431" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37431" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.9421, -32.638, -59.1906)
 
-[node name="@Node3D@37432" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37432" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.8833, -29.3817, -87.4283)
 
-[node name="@Node3D@37433" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37433" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1554, -37.3483, -69.06)
 
-[node name="@Node3D@37434" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37434" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.4317, -31.4176, -91.6671)
 
-[node name="@Node3D@37435" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37435" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.8771, -33.386, 77.307)
 
-[node name="@Node3D@37436" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37436" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.5323, -37.6272, 71.4065)
 
-[node name="@Node3D@37437" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37437" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.2012, -37.8742, -74.2591)
 
-[node name="@Node3D@37438" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37438" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.771, -32.9924, 16.0604)
 
-[node name="@Node3D@37439" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37439" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.9805, -28.4785, -94.1884)
 
-[node name="@Node3D@37440" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37440" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.2731, -35.8061, -42.2097)
 
-[node name="@Node3D@37441" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37441" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.3332, -30.3398, -90.4917)
 
-[node name="@Node3D@37442" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37442" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.3923, -36.083, 48.7133)
 
-[node name="@Node3D@37443" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37443" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.7073, -32.2739, -78.8486)
 
-[node name="@Node3D@37444" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37444" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6435, -32.4175, -7.69076)
 
-[node name="@Node3D@37445" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37445" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.3651, -30.0948, -7.68339)
 
-[node name="@Node3D@37446" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37446" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.6384, -32.633, 24.4393)
 
-[node name="@Node3D@37447" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37447" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.3625, -31.6474, -84.937)
 
-[node name="@Node3D@37448" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37448" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.83994, -36.363, 44.5602)
 
-[node name="@Node3D@37449" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37449" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.9502, -34.1067, -5.64038)
 
-[node name="@Node3D@37450" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37450" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.9082, -28.2063, -93.885)
 
-[node name="@Node3D@37451" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37451" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.604, -30.1146, -89.5309)
 
-[node name="@Node3D@37452" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37452" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.2604, -33.3247, -60.627)
 
-[node name="@Node3D@37453" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37453" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.92165, -33.8665, 4.36057)
 
-[node name="@Node3D@37454" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37454" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.1176, -34.6076, 32.1001)
 
-[node name="@Node3D@37455" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37455" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.4448, -32.643, 30.1978)
 
-[node name="@Node3D@37456" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37456" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.3055, -35.9377, 85.5203)
 
-[node name="@Node3D@37457" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37457" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.7624, -33.7456, 72.3175)
 
-[node name="@Node3D@37458" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37458" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.546, -35.6789, 1.18753)
 
-[node name="@Node3D@37459" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37459" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.77662, -35.546, 20.3105)
 
-[node name="@Node3D@37460" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37460" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.5292, -35.0709, 13.2628)
 
-[node name="@Node3D@37461" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37461" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77.3506, -34.0871, 77.0808)
 
-[node name="@Node3D@37462" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37462" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.0903, -34.5476, -69.3923)
 
-[node name="@Node3D@37463" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37463" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38949, -36.4311, 23.8672)
 
-[node name="@Node3D@37464" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37464" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.6996, -33.7571, 86.4859)
 
-[node name="@Node3D@37465" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37465" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.3446, -33.8965, 60.7246)
 
-[node name="@Node3D@37466" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37466" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.75162, -34.4873, -48.7455)
 
-[node name="@Node3D@37467" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37467" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7687, -33.4854, 83.1443)
 
-[node name="@Node3D@37468" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37468" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.2049, -34.7361, 11.3371)
 
-[node name="@Node3D@37469" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37469" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.2423, -34.7726, 8.95302)
 
-[node name="@Node3D@37470" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37470" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.2316, -33.5139, 86.8614)
 
-[node name="@Node3D@37471" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37471" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.6643, -24.3566, -98.6663)
 
-[node name="@Node3D@37472" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37472" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.53245, -26.1777, -98.2141)
 
-[node name="@Node3D@37473" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37473" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.8145, -34.366, 8.42009)
 
-[node name="@Node3D@37474" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37474" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.5618, -35.3554, 50.8222)
 
-[node name="@Node3D@37475" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37475" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.1594, -34.597, 2.96569)
 
-[node name="@Node3D@37476" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37476" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.1602, -33.4595, 73.4715)
 
-[node name="@Node3D@37477" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37477" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.8711, -32.033, -20.8929)
 
-[node name="@Node3D@37478" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37478" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4257, -35.5144, 27.8983)
 
-[node name="@Node3D@37479" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37479" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7205, -33.4057, -2.7488)
 
-[node name="@Node3D@37480" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37480" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.7044, -33.861, 71.5366)
 
-[node name="@Node3D@37481" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37481" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36.5653, -32.8354, 95.762)
 
-[node name="@Node3D@37482" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37482" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95.4467, -30.5738, 67.8737)
 
-[node name="@Node3D@37483" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37483" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.3354, -33.3941, 30.0616)
 
-[node name="@Node3D@37484" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37484" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.74974, -27.301, -93.7032)
 
-[node name="@Node3D@37485" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37485" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.3941, -33.0913, 75.8484)
 
-[node name="@Node3D@37486" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37486" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.7603, -32.8544, 98.2082)
 
-[node name="@Node3D@37487" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37487" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85.5939, -31.5881, 41.8563)
 
-[node name="@Node3D@37488" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37488" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.4832, -29.1841, -68.8935)
 
-[node name="@Node3D@37489" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37489" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.8234, -32.8221, 24.8717)
 
-[node name="@Node3D@37490" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37490" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.80446, -32.7174, -76.8891)
 
-[node name="@Node3D@37491" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37491" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.9511, -31.035, -87.1177)
 
-[node name="@Node3D@37492" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37492" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.3795, -28.6756, -74.3937)
 
-[node name="@Node3D@37493" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37493" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.3697, -34.2071, 63.5737)
 
-[node name="@Node3D@37494" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37494" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.5858, -35.9103, 85.894)
 
-[node name="@Node3D@37495" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37495" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.3022, -33.6229, 86.8809)
 
-[node name="@Node3D@37496" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37496" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.7412, -30.8188, 48.5364)
 
-[node name="@Node3D@37497" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37497" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(0.996796, 0.0799902, 0, -0.0799902, 0.996796, 0, 0, 0, 1, 37.1142, -34.3946, 71.4539)
 
-[node name="@Node3D@37498" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37498" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.0088, -33.8616, -63.3748)
 
-[node name="@Node3D@37499" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37499" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.3608, -35.1256, -46.4855)
 
-[node name="@Node3D@37500" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37500" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.5097, -25.914, -41.4556)
 
-[node name="@Node3D@37501" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37501" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.4425, -35.0352, -82.3935)
 
-[node name="@Node3D@37502" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37502" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.2402, -33.2634, -55.9953)
 
-[node name="@Node3D@37503" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37503" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.7462, -32.5921, -53.14)
 
-[node name="@Node3D@37504" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37504" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -96.3369, -29.5353, 98.0142)
 
-[node name="@Node3D@37505" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37505" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.315, -34.7729, -16.5781)
 
-[node name="@Node3D@37506" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37506" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.9115, -34.5784, 10.1418)
 
-[node name="@Node3D@37507" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37507" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.6228, -32.9901, 29.5901)
 
-[node name="@Node3D@37508" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37508" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.137535, -32.3156, -70.58)
 
-[node name="@Node3D@37509" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37509" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.2052, -27.4569, -93.9444)
 
-[node name="@Node3D@37510" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37510" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.0125, -29.9943, -91.111)
 
-[node name="@Node3D@37511" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37511" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.1246, -34.2687, 53.5)
 
-[node name="@Node3D@37512" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37512" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.6736, -33.3426, -83.5225)
 
-[node name="@Node3D@37513" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37513" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.326, -26.1273, -97.3954)
 
-[node name="@Node3D@37514" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37514" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.4154, -30.9277, -79.8887)
 
-[node name="@Node3D@37515" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37515" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.23914, -26.7064, -96.1967)
 
-[node name="@Node3D@37516" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37516" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.0052, -32.8381, 89.2131)
 
-[node name="@Node3D@37517" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37517" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.3407, -33.1061, -19.4902)
 
-[node name="@Node3D@37518" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37518" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.5332, -36.4556, -78.5006)
 
-[node name="@Node3D@37519" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37519" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.2421, -32.5498, -78.4397)
 
-[node name="@Node3D@37520" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37520" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.199, -36.4813, -38.0055)
 
-[node name="@Node3D@37521" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37521" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.2361, -35.7582, 54.4652)
 
-[node name="@Node3D@37522" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37522" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.4324, -35.4759, 56.0171)
 
-[node name="@Node3D@37523" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37523" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.5334, -31.8424, -73.7954)
 
-[node name="@Node3D@37524" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37524" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -94.7921, -31.0792, -47.2893)
 
-[node name="@Node3D@37525" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37525" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.4495, -35.045, 9.67815)
 
-[node name="@Node3D@37526" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37526" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.7693, -33.2019, 29.7993)
 
-[node name="@Node3D@37527" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37527" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.8235, -27.0317, -93.2892)
 
-[node name="@Node3D@37528" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37528" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1603, -33.4041, -66.8307)
 
-[node name="@Node3D@37529" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37529" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.1059, -33.3391, 17.6396)
 
-[node name="@Node3D@37530" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37530" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.0281, -32.8913, -73.7438)
 
-[node name="@Node3D@37531" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37531" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.236, -32.9249, -53.685)
 
-[node name="@Node3D@37532" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37532" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.0203, -31.1854, 79.0347)
 
-[node name="@Node3D@37533" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37533" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.7764, -34.0866, 3.71463)
 
-[node name="@Node3D@37534" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37534" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.5443, -28.6571, -13.3564)
 
-[node name="@Node3D@37535" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37535" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.19907, -33.1634, 4.83419)
 
-[node name="@Node3D@37536" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37536" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.26513, -33.0976, -63.3641)
 
-[node name="@Node3D@37537" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37537" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.3976, -34.715, 8.89159)
 
-[node name="@Node3D@37538" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37538" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.605, -29.0156, -72.3469)
 
-[node name="@Node3D@37539" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37539" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.267, -30.6943, -92.7012)
 
-[node name="@Node3D@37540" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37540" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.4635, -32.6299, -27.8593)
 
-[node name="@Node3D@37541" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37541" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.1663, -34.6973, 66.2414)
 
-[node name="@Node3D@37542" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37542" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -91.7822, -31.2784, -84.6838)
 
-[node name="@Node3D@37543" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37543" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.5673, -31.561, -85.266)
 
-[node name="@Node3D@37544" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37544" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.9926, -36.0951, -41.2502)
 
-[node name="@Node3D@37545" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37545" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.002, -31.4018, -97.4678)
 
-[node name="@Node3D@37546" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37546" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.2737, -25.2461, -92.7703)
 
-[node name="@Node3D@37547" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37547" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.6736, -31.7286, 2.37524)
 
-[node name="@Node3D@37548" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37548" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.1021, -29.1409, -88.615)
 
-[node name="@Node3D@37549" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37549" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.1561, -31.7334, -88.3727)
 
-[node name="@Node3D@37550" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37550" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.33972, -36.6127, 83.4537)
 
-[node name="@Node3D@37551" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37551" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.253, -34.3812, -66.8527)
 
-[node name="@Node3D@37552" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37552" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64.9744, -34.6114, 12.2957)
 
-[node name="@Node3D@37553" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37553" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.4362, -35.3578, 96.8057)
 
-[node name="@Node3D@37554" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37554" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.1922, -35.0515, 46.1698)
 
-[node name="@Node3D@37555" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37555" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -82.6377, -34.2024, -59.8747)
 
-[node name="@Node3D@37556" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37556" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.5142, -32.6743, 96.3744)
 
-[node name="@Node3D@37557" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_4nddg")]
+[node name="@Node3D@37557" parent="PropsNoNav/ScatteTrees" instance=ExtResource("11_tl0ru")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -76.311, -33.3252, -58.7139)
 
-[node name="car1" parent="." instance=ExtResource("13_viecc")]
+[node name="car1" parent="." instance=ExtResource("12_5rjsf")]
 transform = Transform3D(2.15661, 0, 0, 0, 2.14509, -0.22262, 0, 0.22262, 2.14509, 0.94037, -3.54307, 16.6104)
 
-[node name="road" parent="." instance=ExtResource("14_8ytks")]
+[node name="road" parent="." instance=ExtResource("13_ot4hx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.61645, -2.55872, 18.4616)
 
-[node name="cave_entrance" parent="." instance=ExtResource("13_8drim")]
+[node name="cave_entrance" parent="." instance=ExtResource("14_833b3")]
 transform = Transform3D(-0.999788, 2.98023e-08, -1.73217, -0.483812, 1.9204, 0.27925, 1.66323, 0.558619, -0.959998, 26.0761, -4.33644, 51.3122)
 
-[node name="door" parent="cave_entrance" instance=ExtResource("16_birli")]
-transform = Transform3D(0.840144, -0.293143, 0.456317, 0.36047, 0.930437, -0.0659523, -0.405241, 0.219898, 0.887369, -2.60351, 1.18258, 1.50271)
+[node name="door" parent="cave_entrance" instance=ExtResource("8_ygfxh")]
+transform = Transform3D(0.840144, -0.293143, 0.456317, 0.36047, 0.930437, -0.0659523, -0.405241, 0.219898, 0.887369, -1.52829, 1.54371, 0.882105)
 sceneUID = "uid://dvi8b8dc6glt3"
 
 [node name="OmniLight3D" type="OmniLight3D" parent="cave_entrance"]
@@ -840,7 +836,7 @@ shadow_enabled = true
 omni_range = 9.792
 omni_shadow_mode = 0
 
-[node name="cave_entrance2" parent="." instance=ExtResource("13_8drim")]
+[node name="cave_entrance2" parent="." instance=ExtResource("14_833b3")]
 transform = Transform3D(-1.74595, 0, 0.975536, 0, 2, 0, -0.975536, 0, -1.74595, -69.1064, -0.572496, 24.2342)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="cave_entrance2"]
@@ -854,11 +850,11 @@ shadow_enabled = true
 omni_range = 9.792
 omni_shadow_mode = 0
 
-[node name="door" parent="cave_entrance2" instance=ExtResource("16_birli")]
+[node name="door" parent="cave_entrance2" instance=ExtResource("8_ygfxh")]
 transform = Transform3D(0.840144, -0.293143, 0.456317, 0.36047, 0.930437, -0.0659523, -0.405241, 0.219898, 0.887369, -2.60351, 1.18258, 1.50271)
-sceneUID = "uid://dvjlota7ojr7h"
+sceneUID = "uid://cw2yrtqti4ecx"
 
-[node name="cave_entrance3" parent="." instance=ExtResource("13_8drim")]
+[node name="cave_entrance3" parent="." instance=ExtResource("14_833b3")]
 transform = Transform3D(1.93838, 0, -0.492645, 0, 2, 0, 0.492645, 0, 1.93838, 36.0663, -5.84085, -71.9605)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="cave_entrance3"]
@@ -880,41 +876,21 @@ curve = SubResource("Curve3D_birli")
 transform = Transform3D(-0.975565, -0.0993995, -0.195925, -1.49011e-08, 0.891791, -0.45244, 0.219697, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
 progress = 3.42538
 
-[node name="small_creature" parent="Path3D/PathFollow3D" instance=ExtResource("17_mkd6d")]
+[node name="small_creature" parent="Path3D/PathFollow3D" instance=ExtResource("16_gelit")]
 transform = Transform3D(0.231468, -0.0944603, 0, 0.0944603, 0.231468, 0, 0, 0, 0.25, 0, 0, 0)
 
 [node name="PathFollow3D2" type="PathFollow3D" parent="Path3D"]
 transform = Transform3D(-0.975565, -0.0993995, -0.195925, -1.49011e-08, 0.891791, -0.45244, 0.219697, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
 progress = 3.42538
 
-[node name="small_creature" parent="Path3D/PathFollow3D2" instance=ExtResource("17_mkd6d")]
+[node name="small_creature" parent="Path3D/PathFollow3D2" instance=ExtResource("16_gelit")]
 transform = Transform3D(0.231468, -0.0944603, 0, 0.0944603, 0.231468, 0, 0, 0, 0.25, 0, 0, 0)
 
 [node name="PathFollow3D3" type="PathFollow3D" parent="Path3D"]
 transform = Transform3D(-0.975565, -0.0993995, -0.195925, -1.49011e-08, 0.891791, -0.45244, 0.219697, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
 progress = 3.42538
 
-[node name="small_creature" parent="Path3D/PathFollow3D3" instance=ExtResource("17_mkd6d")]
+[node name="small_creature" parent="Path3D/PathFollow3D3" instance=ExtResource("16_gelit")]
 transform = Transform3D(0.231468, -0.0944603, 0, 0.0944603, 0.231468, 0, 0, 0, 0.25, 0, 0, 0)
-
-[node name="cave_entrance4" parent="." instance=ExtResource("13_8drim")]
-transform = Transform3D(1.77864, 0.313833, -0.859039, -0.264547, 1.9748, 0.173707, 0.875473, -0.040854, 1.79774, 85.3253, 0.491722, -18.0329)
-
-[node name="door" parent="cave_entrance4" instance=ExtResource("16_birli")]
-transform = Transform3D(0.840144, -0.293143, 0.456317, 0.36047, 0.930437, -0.0659523, -0.405241, 0.219898, 0.887369, -2.60351, 1.18258, 1.50271)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="cave_entrance4"]
-transform = Transform3D(0.5, -1.49012e-08, -1.49012e-08, 3.72529e-08, 0.5, -7.45058e-09, 0, 0, 0.5, 0.0990963, 2.45868, -0.0571995)
-light_energy = 2.47
-light_indirect_energy = 0.205
-light_volumetric_fog_energy = 2.66
-light_negative = true
-light_specular = 2.95
-shadow_enabled = true
-omni_range = 9.792
-omni_shadow_mode = 0
-
-[connection signal="screen_entered" from="NavigationRegion3D/AI/VisibleOnScreenNotifier3D" to="NavigationRegion3D/AI" method="_on_visible_on_screen_notifier_3d_screen_entered"]
-[connection signal="screen_exited" from="NavigationRegion3D/AI/VisibleOnScreenNotifier3D" to="NavigationRegion3D/AI" method="_on_visible_on_screen_notifier_3d_screen_exited"]
 
 [editable path="NavigationRegion3D/Geo/level_1"]

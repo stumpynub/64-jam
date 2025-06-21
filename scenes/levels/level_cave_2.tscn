@@ -1,13 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://cw2yrtqti4ecx"]
+[gd_scene load_steps=17 format=3 uid="uid://co76uxvr3v3kg"]
 
+[ext_resource type="Script" uid="uid://jwfwmmu10vhk" path="res://scenes/levels/level_cave_2.gd" id="1_shd6k"]
 [ext_resource type="Script" uid="uid://cdtu5myddukf0" path="res://ui.gd" id="2_7m3nq"]
 [ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_hebdk"]
-[ext_resource type="PackedScene" uid="uid://cyxu27fdomlhe" path="res://UI.tscn" id="3_odhmk"]
+[ext_resource type="PackedScene" uid="uid://cyxu27fdomlhe" path="res://UI.tscn" id="3_f6n5r"]
 [ext_resource type="PackedScene" uid="uid://cx62uttsobnlu" path="res://assets/meshes/enviroment/terrain/cave.blend" id="6_8hu1x"]
 [ext_resource type="Texture2D" uid="uid://d4nefkl25udlw" path="res://assets/images/moon.png" id="6_j84w5"]
 [ext_resource type="Shader" uid="uid://btnnba664xdt4" path="res://assets/shaders/shader_crtv.gdshader" id="7_2hx22"]
+[ext_resource type="PackedScene" uid="uid://cmi0dc5ro4vv0" path="res://scenes/levels/scene_changer.tscn" id="7_6snlq"]
 [ext_resource type="Texture2D" uid="uid://cpm0rstkkiydj" path="res://assets/images/textures/rock.png" id="7_7m3nq"]
-[ext_resource type="PackedScene" uid="uid://cmi0dc5ro4vv0" path="res://scenes/levels/scene_changer.tscn" id="8_ygfxh"]
 [ext_resource type="PackedScene" uid="uid://s81dl61row4j" path="res://scenes/ai/ai.tscn" id="9_8ndv8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tortc"]
@@ -16,12 +17,12 @@ sky_horizon_color = Color(0.0207741, 0.164199, 0.193945, 1)
 sky_curve = 0.227357
 ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
 
-[sub_resource type="Sky" id="Sky_6jft4"]
+[sub_resource type="Sky" id="Sky_f6n5r"]
 sky_material = SubResource("ProceduralSkyMaterial_tortc")
 
 [sub_resource type="Environment" id="Environment_ksw18"]
 background_mode = 2
-sky = SubResource("Sky_6jft4")
+sky = SubResource("Sky_f6n5r")
 ambient_light_sky_contribution = 0.0
 tonemap_mode = 2
 fog_light_color = Color(0.061217, 0.223754, 0.368007, 1)
@@ -42,7 +43,16 @@ albedo_texture = ExtResource("7_7m3nq")
 uv1_scale = Vector3(0.2, 0.2, 0.2)
 uv1_triplanar = true
 
+[sub_resource type="Curve3D" id="Curve3D_ygfxh"]
+closed = true
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -68.8188, -5.35097, -10.3676, 0, 0, 0, 0, 0, 0, -65.5766, -5.95284, -10.316, 0, 0, 0, 0, 0, 0, -62.4585, -5.90198, -9.67966, 0, 0, 0, 0, 0, 0, -60.4091, -6.04201, -10.276, 0, 0, 0, 0, 0, 0, -59.079, -5.47769, -8.8097, 0, 0, 0, 0, 0, 0, -57.5203, -5.77587, -8.7448, 0, 0, 0, 0, 0, 0, -55.8259, -5.93051, -9.46407, 0, 0, 0, 0, 0, 0, -54.0496, -5.346, -8.57878, 0, 0, 0, 0, 0, 0, -52.382, -5.41574, -8.35763, 0, 0, 0, 0, 0, 0, -49.5029, -5.53616, -7.9549, 0, 0, 0, 0, 0, 0, -45.4534, -5.49879, -7.57327, 0, 0, 0, 0, 0, 0, -43.7786, -5.49879, -7.40162, 0, 0, 0, 0, 0, 0, -42.457, -5.54588, -5.56127, 0, 0, 0, 0, 0, 0, -39.0198, -5.53544, -4.76869, 0, 0, 0, 0, 0, 0, -37.4691, -5.31818, -4.29675, 0, 0, 0, 0, 0, 0, -35.7815, -4.62586, -5.50901, 0, 0, 0, 0, 0, 0, -33.0965, -3.53183, -4.59679, 0, 0, 0, 0, 0, 0, -29.393, -2.08447, -2.66995, 0, 0, 0, 0, 0, 0, -26.6726, -0.308188, -0.374689, 0, 0, 0, 0, 0, 0, -22.7039, 0.141572, -3.58233, 0, 0, 0, 0, 0, 0, -20.4162, 0.280436, -4.03042, 0, 0, 0, 0, 0, 0, -16.2385, -0.0310676, -4.90141, 0, 0, 0, 0, 0, 0, -12.5439, 0.0104599, -2.98979, 0, 0, 0, 0, 0, 0, -6.86645, 0.912955, -0.0597186, 0, 0, 0, 0, 0, 0, 1.31459, 0.160655, -1.17053),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+}
+point_count = 25
+
 [node name="LevelProtoRail2" type="Node3D"]
+script = ExtResource("1_shd6k")
 
 [node name="Enviro" type="Node3D" parent="."]
 
@@ -56,17 +66,19 @@ environment = SubResource("Environment_ksw18")
 
 [node name="Player" parent="." instance=ExtResource("2_hebdk")]
 unique_name_in_owner = true
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.41475, 1.45602, 0)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.60883, 1.45602, 0)
 
-[node name="UI" type="Control" parent="Player"]
+[node name="UI" parent="Player" instance=ExtResource("3_f6n5r")]
+unique_name_in_owner = true
+metadata/_edit_use_anchors_ = true
+
+[node name="UI2" type="Control" parent="Player"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_7m3nq")
 metadata/_custom_type_script = "uid://cdtu5myddukf0"
-
-[node name="UI2" parent="Player" instance=ExtResource("3_odhmk")]
 metadata/_edit_use_anchors_ = true
 
 [node name="Geo" type="Node3D" parent="."]
@@ -88,6 +100,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="Effects/Control"]
 material = SubResource("ShaderMaterial_8gldb")
@@ -98,6 +111,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="cave" parent="." instance=ExtResource("6_8hu1x")]
 
@@ -110,18 +124,25 @@ transform = Transform3D(-0.96165, -0.0235023, -0.273271, 0.0244323, -0.999701, 0
 [node name="cave " parent="cave/cave" index="0"]
 material_override = SubResource("StandardMaterial3D_hebdk")
 
-[node name="door" parent="." instance=ExtResource("8_ygfxh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06573, 2.00278, 0.0868595)
+[node name="door" parent="." instance=ExtResource("7_6snlq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.16857, 1.68959, 0.0760789)
 sceneUID = "uid://b6ib3d7qycygh"
 
-[node name="CharacterBody3D2" parent="." node_paths=PackedStringArray("target") instance=ExtResource("9_8ndv8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.5931, -5.21279, -9.93161)
-target = NodePath("../Player")
+[node name="Path3D" type="Path3D" parent="."]
+curve = SubResource("Curve3D_ygfxh")
 
-[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="CharacterBody3D2"]
+[node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
+transform = Transform3D(-0.0159212, 0.182477, -0.983076, -1.49005e-08, 0.983203, 0.1825, 0.999827, 0.00290577, -0.0156544, -68.8188, -5.35097, -10.3676)
 
-[connection signal="screen_entered" from="CharacterBody3D2/VisibleOnScreenNotifier3D" to="CharacterBody3D2" method="_on_visible_on_screen_notifier_3d_screen_entered"]
-[connection signal="screen_exited" from="CharacterBody3D2/VisibleOnScreenNotifier3D" to="CharacterBody3D2" method="_on_visible_on_screen_notifier_3d_screen_exited"]
+[node name="AI" parent="Path3D/PathFollow3D" node_paths=PackedStringArray("target") instance=ExtResource("9_8ndv8")]
+unique_name_in_owner = true
+transform = Transform3D(-0.0159227, -1.51749e-08, 0.999919, 0.182478, 0.98321, 0.00290579, -0.983086, 0.182502, -0.0156546, -0.141786, -0.685631, 0.0800858)
+target = NodePath("../../../Player")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="Path3D/PathFollow3D/AI"]
+
+[connection signal="screen_entered" from="Path3D/PathFollow3D/AI/VisibleOnScreenNotifier3D" to="Path3D/PathFollow3D/AI" method="_on_visible_on_screen_notifier_3d_screen_entered"]
+[connection signal="screen_exited" from="Path3D/PathFollow3D/AI/VisibleOnScreenNotifier3D" to="Path3D/PathFollow3D/AI" method="_on_visible_on_screen_notifier_3d_screen_exited"]
 
 [editable path="cave"]
 [editable path="cave/cave"]

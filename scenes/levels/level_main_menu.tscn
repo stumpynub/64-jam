@@ -46,6 +46,7 @@ start_level_uid = "uid://0ptit6n3gwi3"
 intro_screen_uid = "uid://0ptit6n3gwi3"
 
 [node name="Panel" type="Panel" parent="."]
+visible = false
 layout_mode = 2
 offset_right = 1152.0
 offset_bottom = 648.0

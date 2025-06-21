@@ -15,12 +15,12 @@ sky_horizon_color = Color(0.0207741, 0.164199, 0.193945, 1)
 sky_curve = 0.227357
 ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
 
-[sub_resource type="Sky" id="Sky_6jft4"]
+[sub_resource type="Sky" id="Sky_f6n5r"]
 sky_material = SubResource("ProceduralSkyMaterial_tortc")
 
 [sub_resource type="Environment" id="Environment_ksw18"]
 background_mode = 2
-sky = SubResource("Sky_6jft4")
+sky = SubResource("Sky_f6n5r")
 ambient_light_sky_contribution = 0.0
 tonemap_mode = 2
 fog_light_color = Color(0.061217, 0.223754, 0.368007, 1)
@@ -56,15 +56,17 @@ environment = SubResource("Environment_ksw18")
 [node name="CharacterBody3D" parent="." instance=ExtResource("2_hebdk")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.60883, 1.45602, 0)
 
-[node name="UI" type="Control" parent="CharacterBody3D"]
+[node name="UI" parent="CharacterBody3D" instance=ExtResource("3_f6n5r")]
+unique_name_in_owner = true
+metadata/_edit_use_anchors_ = true
+
+[node name="UI2" type="Control" parent="CharacterBody3D"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_7m3nq")
 metadata/_custom_type_script = "uid://cdtu5myddukf0"
-
-[node name="UI2" parent="CharacterBody3D" instance=ExtResource("3_f6n5r")]
 metadata/_edit_use_anchors_ = true
 
 [node name="Geo" type="Node3D" parent="."]
@@ -86,6 +88,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="Effects/Control"]
 material = SubResource("ShaderMaterial_8gldb")
@@ -96,6 +99,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="cave" parent="." instance=ExtResource("6_8hu1x")]
 

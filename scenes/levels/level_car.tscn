@@ -88,6 +88,7 @@ environment = SubResource("Environment_xvlhf")
 transform = Transform3D(-0.250988, 0, -0.96799, 0, 1, 0, 0.96799, 0, -0.250988, 13.3459, 0, -1.14653)
 
 [node name="UI" parent="CharacterBody3D" instance=ExtResource("3_8yjrr")]
+unique_name_in_owner = true
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 transform = Transform3D(2.46878, 0, 0, 0, 2.46878, 0, 0, 0, 2.46878, 0, 0, 0)

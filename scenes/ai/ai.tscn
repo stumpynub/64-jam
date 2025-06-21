@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cvqpu6n54qjdx" path="res://scenes/ai/creature 1.glb" id="3_d6u0q"]
 
 [node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("agent")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 script = ExtResource("1_be6ib")
 agent = NodePath("NavigationAgent3D")
 walk_speed = 3

@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://hsth5xuvay8c"]
+
+[ext_resource type="PackedScene" uid="uid://cgdbyyiebt35d" path="res://assets/meshes/enviroment/another_cave.blend" id="1_ud508"]
+[ext_resource type="Texture2D" uid="uid://cpm0rstkkiydj" path="res://assets/images/textures/rock.png" id="2_ovesw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ud508"]
+transparency = 1
+cull_mode = 1
+depth_draw_mode = 1
+albedo_texture = ExtResource("2_ovesw")
+
+[node name="another_cave" instance=ExtResource("1_ud508")]
+
+[node name="Cube" parent="." index="0"]
+material_override = SubResource("StandardMaterial3D_ud508")
