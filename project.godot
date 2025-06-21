@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="64 Jam"
-run/main_scene="uid://b0mmyofiytdkj"
+run/main_scene="uid://brvu3s3ji54ux"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 
 [autoload]

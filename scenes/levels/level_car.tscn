@@ -1498,6 +1498,606 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 123.108, -32.6926, 247.621)
 [node name="@Node3D@242370" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.363, -32.6926, 169.573)
 
+[node name="@Node3D@174663" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.936, -32.6926, 173.113)
+
+[node name="@Node3D@174664" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.4553, -32.6926, 179.499)
+
+[node name="@Node3D@174665" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.4523, -32.6926, 222.827)
+
+[node name="@Node3D@174666" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.6176, -32.6926, 78.7852)
+
+[node name="@Node3D@174667" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.271, -32.6926, 22.6387)
+
+[node name="@Node3D@174668" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.7675, -32.6926, 52.1245)
+
+[node name="@Node3D@174669" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9044, -32.6926, 213.966)
+
+[node name="@Node3D@174670" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -114.96, -32.6926, 37.2598)
+
+[node name="@Node3D@174671" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -104.621, -32.6926, 190.504)
+
+[node name="@Node3D@174672" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.9852, -32.6926, 134.569)
+
+[node name="@Node3D@174673" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.0371, -32.6926, 98.2893)
+
+[node name="@Node3D@174674" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.1439, -32.6926, 61.8479)
+
+[node name="@Node3D@174675" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 104.344, -32.6926, 11.3818)
+
+[node name="@Node3D@174676" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.6384, -32.6926, 164.888)
+
+[node name="@Node3D@174677" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.194, -32.6926, 154.398)
+
+[node name="@Node3D@174678" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.432, -32.6926, 258.327)
+
+[node name="@Node3D@174679" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 134.374, -32.6926, 103.584)
+
+[node name="@Node3D@174680" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7926, -32.5118, -3.95931)
+
+[node name="@Node3D@174681" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 122.024, -32.6926, 43.1494)
+
+[node name="@Node3D@174682" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3922, -32.6926, 188.821)
+
+[node name="@Node3D@174683" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.861, -32.6926, 121.048)
+
+[node name="@Node3D@174684" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5325, -32.6926, 254.362)
+
+[node name="@Node3D@174685" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -84.5554, -24.8923, 10.4589)
+
+[node name="@Node3D@174686" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140.452, -32.6926, 109.37)
+
+[node name="@Node3D@174687" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9177, -32.6926, 31.4635)
+
+[node name="@Node3D@174688" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.6573, -32.6926, -13.4433)
+
+[node name="@Node3D@174689" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.8223, -32.6926, 96.7326)
+
+[node name="@Node3D@174690" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.91, -32.6926, 252.9)
+
+[node name="@Node3D@174691" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -126.526, -32.6926, -14.5308)
+
+[node name="@Node3D@174692" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 137.984, -32.6926, -15.9627)
+
+[node name="@Node3D@174693" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135.516, -32.6926, 241.516)
+
+[node name="@Node3D@174694" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107.68, -32.6926, 117.555)
+
+[node name="@Node3D@174695" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.6417, -32.6926, 146.706)
+
+[node name="@Node3D@174696" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.865, -32.6926, 141.845)
+
+[node name="@Node3D@174697" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.8787, -32.6926, 231.556)
+
+[node name="@Node3D@174698" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5042, -32.6926, 59.7579)
+
+[node name="@Node3D@174699" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0878, -32.6926, 54.142)
+
+[node name="@Node3D@174700" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.4931, -32.6926, 35.2048)
+
+[node name="@Node3D@174701" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.7375, -32.6926, 212.607)
+
+[node name="@Node3D@174702" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.5775, -32.6926, 18.1882)
+
+[node name="@Node3D@174703" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65.6651, -32.6926, 91.4325)
+
+[node name="@Node3D@174704" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.335, -32.6926, 97.2787)
+
+[node name="@Node3D@174705" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.2631, -32.6926, -21.6208)
+
+[node name="@Node3D@174706" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35.7911, -32.6926, 184.966)
+
+[node name="@Node3D@174707" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -71.3928, -32.6926, 218.842)
+
+[node name="@Node3D@174708" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -124.035, -32.6926, 241.555)
+
+[node name="@Node3D@174709" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.898, -32.6926, 33.5222)
+
+[node name="@Node3D@174710" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.289, -32.6926, -1.31422)
+
+[node name="@Node3D@174711" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71.3817, -32.6926, 242.307)
+
+[node name="@Node3D@174712" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 128.021, -32.6926, 83.9902)
+
+[node name="@Node3D@174713" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.309, -32.6926, -11.1709)
+
+[node name="@Node3D@174714" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.8584, -32.6926, 88.5105)
+
+[node name="@Node3D@174715" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.4899, -32.6926, 209.694)
+
+[node name="@Node3D@174716" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.55632, -32.6926, 170.138)
+
+[node name="@Node3D@174717" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.1308, -32.6926, 79.6737)
+
+[node name="@Node3D@174718" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.3557, -32.6926, 238.861)
+
+[node name="@Node3D@174719" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -97.5297, -32.6926, 108.875)
+
+[node name="@Node3D@174720" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -133.663, -32.6926, 238.626)
+
+[node name="@Node3D@174721" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.947, -32.6926, 213.124)
+
+[node name="@Node3D@174722" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.9346, -32.6926, 241.98)
+
+[node name="@Node3D@174723" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.8964, -32.6926, 84.2856)
+
+[node name="@Node3D@174724" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -109.417, -32.6926, 1.78765)
+
+[node name="@Node3D@174725" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 119.276, -32.6926, 93.6619)
+
+[node name="@Node3D@174726" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.055, -32.6926, 107.829)
+
+[node name="@Node3D@174727" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.55745, -32.6926, 213.518)
+
+[node name="@Node3D@174728" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.1461, -22.4126, 8.28403)
+
+[node name="@Node3D@174729" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.7658, -32.6926, 119.611)
+
+[node name="@Node3D@174730" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.9157, -32.6926, 142.872)
+
+[node name="@Node3D@174731" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.7929, -32.6926, 174.024)
+
+[node name="@Node3D@174732" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.838, -32.6926, 235.696)
+
+[node name="@Node3D@174733" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.9343, -32.6926, 148.801)
+
+[node name="@Node3D@174734" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -138.337, -32.6926, 215.003)
+
+[node name="@Node3D@174735" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 101.361, -32.6926, 173.293)
+
+[node name="@Node3D@174736" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28673, -32.6926, 97.7268)
+
+[node name="@Node3D@174737" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.2453, -32.6926, 48.4518)
+
+[node name="@Node3D@174738" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.925, -32.6926, 141.529)
+
+[node name="@Node3D@174739" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -111.838, -32.6926, 34.4421)
+
+[node name="@Node3D@174740" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.21418, -32.6926, 166.256)
+
+[node name="@Node3D@174741" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.0496, -32.6926, 91.4625)
+
+[node name="@Node3D@174742" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -130.86, -32.6926, 105.975)
+
+[node name="@Node3D@174743" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.7081, -32.6926, 86.2839)
+
+[node name="@Node3D@174744" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140.458, -32.6926, 5.6521)
+
+[node name="@Node3D@174745" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.4697, -32.6926, 48.5098)
+
+[node name="@Node3D@174746" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.8404, -10.7384, 116.369)
+
+[node name="@Node3D@174747" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.9929, -22.245, 8.07984)
+
+[node name="@Node3D@174748" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.1352, -32.6926, 24.1568)
+
+[node name="@Node3D@174749" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.1765, -32.6926, 206.927)
+
+[node name="@Node3D@174750" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -86.2463, -32.6926, 113.901)
+
+[node name="@Node3D@174751" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106.428, -32.6926, 236.196)
+
+[node name="@Node3D@174752" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.2655, -32.6926, 80.1444)
+
+[node name="@Node3D@174753" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.4701, -32.6926, 250.617)
+
+[node name="@Node3D@174754" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.8508, -32.6926, 19.9336)
+
+[node name="@Node3D@174755" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.08296, -32.6926, 12.2665)
+
+[node name="@Node3D@174756" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.1492, -32.6926, 73.6091)
+
+[node name="@Node3D@174757" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.6807, -32.6926, 172.565)
+
+[node name="@Node3D@174758" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.6315, -32.6926, 249.152)
+
+[node name="@Node3D@174759" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.307286, -32.6926, 47.4167)
+
+[node name="@Node3D@174760" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.4088, -32.6926, 41.5142)
+
+[node name="@Node3D@174761" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140.11, -32.6926, 86.7978)
+
+[node name="@Node3D@174762" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.1639, -32.6926, 185.439)
+
+[node name="@Node3D@174763" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -93.0247, -32.6926, 22.6926)
+
+[node name="@Node3D@174764" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.0476, -32.6926, 231.856)
+
+[node name="@Node3D@174765" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 141.567, -32.6926, 155.596)
+
+[node name="@Node3D@174766" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 110.338, -32.6926, 39.5469)
+
+[node name="@Node3D@174767" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.911, -32.6926, 97.7618)
+
+[node name="@Node3D@174768" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.8851, -24.7801, -10.399)
+
+[node name="@Node3D@174769" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.3775, -32.6926, 160.617)
+
+[node name="@Node3D@174770" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 123.64, -32.6926, 155.794)
+
+[node name="@Node3D@174771" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -127.735, -32.6926, 42.093)
+
+[node name="@Node3D@174772" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -127.187, -32.6926, 102.213)
+
+[node name="@Node3D@174773" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.2078, -32.6926, 188.197)
+
+[node name="@Node3D@174774" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.8033, -32.6926, 229.549)
+
+[node name="@Node3D@174775" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.5764, -32.6926, 194.889)
+
+[node name="@Node3D@174776" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.118, -32.6926, -17.3696)
+
+[node name="@Node3D@174777" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111.064, -32.6926, 234.029)
+
+[node name="@Node3D@174778" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.967, -32.6926, 127.176)
+
+[node name="@Node3D@174779" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.9894, -32.6926, 95.8111)
+
+[node name="@Node3D@174780" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.797, -32.6926, 5.83108)
+
+[node name="@Node3D@174781" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.0925, -32.6926, 116.399)
+
+[node name="@Node3D@174782" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0382, -32.6926, -8.82774)
+
+[node name="@Node3D@174783" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.0225, -32.6926, 53.1115)
+
+[node name="@Node3D@174784" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.3993, -32.6926, 250.893)
+
+[node name="@Node3D@174785" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -133.626, -32.6926, 257.292)
+
+[node name="@Node3D@174786" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.163, -32.6926, 101.426)
+
+[node name="@Node3D@174787" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.3604, -32.6926, 92.4584)
+
+[node name="@Node3D@174788" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -118.448, -32.6926, 174.464)
+
+[node name="@Node3D@174789" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.9237, -32.6926, 227.747)
+
+[node name="@Node3D@174790" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.5731, -32.6926, 211.28)
+
+[node name="@Node3D@174791" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -57.2945, -32.6926, 161.905)
+
+[node name="@Node3D@174792" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 119.07, -32.6926, 19.7944)
+
+[node name="@Node3D@174793" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 105.115, -32.6926, 233.75)
+
+[node name="@Node3D@174794" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.7511, -32.6926, 110.384)
+
+[node name="@Node3D@174795" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 99.8567, -32.6926, 112.107)
+
+[node name="@Node3D@174796" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.9788, -32.6926, 74.9666)
+
+[node name="@Node3D@174797" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.302, -32.6926, 252.779)
+
+[node name="@Node3D@174798" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -65.0599, -21.2978, -6.91813)
+
+[node name="@Node3D@174799" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.7227, -32.6926, 139.63)
+
+[node name="@Node3D@174800" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7559, -32.6926, 103.474)
+
+[node name="@Node3D@174801" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94.9433, -24.0249, -9.78622)
+
+[node name="@Node3D@174802" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -110.375, -32.6926, 119.982)
+
+[node name="@Node3D@174803" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -115.465, -32.6926, 170.252)
+
+[node name="@Node3D@174804" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 59.834, -32.6926, 249.063)
+
+[node name="@Node3D@174805" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.7002, -32.6926, 159.659)
+
+[node name="@Node3D@174806" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 131.27, -32.6926, 77.5753)
+
+[node name="@Node3D@174807" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.2091, -32.6926, 221.08)
+
+[node name="@Node3D@174808" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.9124, -20.4105, -5.25815)
+
+[node name="@Node3D@174809" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.7211, -32.6926, 96.6428)
+
+[node name="@Node3D@174810" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.24833, -32.6926, 176.768)
+
+[node name="@Node3D@174811" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.9083, -32.6926, 43.8767)
+
+[node name="@Node3D@174812" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.5257, -32.6926, 85.9922)
+
+[node name="@Node3D@174813" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.8571, -32.6926, 79.9506)
+
+[node name="@Node3D@174814" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.09941, -32.6926, 66.5814)
+
+[node name="@Node3D@174815" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -125.906, -32.6926, 95.597)
+
+[node name="@Node3D@174816" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.5817, -32.6926, 107.544)
+
+[node name="@Node3D@174817" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 138.397, -32.6926, 41.9009)
+
+[node name="@Node3D@174818" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.3116, -32.6926, 77.751)
+
+[node name="@Node3D@174819" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.17, -32.6926, -16.7685)
+
+[node name="@Node3D@174820" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8635, -32.6926, 179.396)
+
+[node name="@Node3D@174821" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.7201, -32.6926, 199.955)
+
+[node name="@Node3D@174822" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.4669, -32.6926, 165.965)
+
+[node name="@Node3D@174823" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -128.749, -32.6926, 200.381)
+
+[node name="@Node3D@174824" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -113.955, -32.6926, 177.01)
+
+[node name="@Node3D@174825" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.4371, -32.6926, 189.655)
+
+[node name="@Node3D@174826" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 95.764, -32.6926, 226.405)
+
+[node name="@Node3D@174827" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.82208, -32.6926, 15.5645)
+
+[node name="@Node3D@174828" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.2901, -32.6926, 6.84521)
+
+[node name="@Node3D@174829" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.8935, -32.6926, 205.383)
+
+[node name="@Node3D@174830" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.8062, -32.6926, 7.83179)
+
+[node name="@Node3D@174831" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.3657, -32.6926, 12.6084)
+
+[node name="@Node3D@174832" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.6978, -32.6926, 195.923)
+
+[node name="@Node3D@174833" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.3359, -32.6926, 221.559)
+
+[node name="@Node3D@174834" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135.892, -32.6926, 170.293)
+
+[node name="@Node3D@174835" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -104.431, -32.6926, 188.414)
+
+[node name="@Node3D@174836" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.3168, -32.6926, 161.148)
+
+[node name="@Node3D@174837" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106.589, -32.6926, -1.30029)
+
+[node name="@Node3D@174838" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.727, -30.8413, -12.4068)
+
+[node name="@Node3D@174839" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0311, -32.6926, 168.908)
+
+[node name="@Node3D@174840" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -129.743, -32.6926, 130.276)
+
+[node name="@Node3D@174841" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96.683, -32.6926, 166.073)
+
+[node name="@Node3D@174842" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -125.042, -32.6926, 73.8353)
+
+[node name="@Node3D@174843" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6365, -32.6926, 202.42)
+
+[node name="@Node3D@174844" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 102.103, -9.92079, 192.264)
+
+[node name="@Node3D@174845" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 140.777, -32.6926, 66.9885)
+
+[node name="@Node3D@174846" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.1338, -32.6926, 190.789)
+
+[node name="@Node3D@174847" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91.534, -32.6926, 105.232)
+
+[node name="@Node3D@174848" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -125.118, -32.6926, 177.228)
+
+[node name="@Node3D@174849" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4826, -32.6926, 99.5382)
+
+[node name="@Node3D@174850" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.6808, -32.6926, 220.031)
+
+[node name="@Node3D@174851" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -91.4441, -32.6926, 225.773)
+
+[node name="@Node3D@174852" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.6061, -32.6926, 160.809)
+
+[node name="@Node3D@174853" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 119.121, -32.6926, 152.074)
+
+[node name="@Node3D@174854" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -106.947, -32.6926, 129.21)
+
+[node name="@Node3D@174855" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9572, -32.6926, 129.177)
+
+[node name="@Node3D@174856" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.5913, -32.6926, 139.447)
+
+[node name="@Node3D@174857" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.6093, -32.6926, 50.0342)
+
+[node name="@Node3D@174858" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108.769, -32.6926, 59.0102)
+
+[node name="@Node3D@174859" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 129.578, -32.6926, 30.3931)
+
+[node name="@Node3D@174860" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118.255, -32.6926, 199.292)
+
+[node name="@Node3D@174861" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5855, -32.6926, 248.722)
+
+[node name="@Node3D@174862" type="Node3D" parent="PropsNoNav/ScatteTrees" instance=ExtResource("12_dcxb8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -117.583, -32.6926, 167.938)
+
 [node name="Tree" parent="PropsNoNav" instance=ExtResource("12_dcxb8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.63351, -0.975123, -10.0639)
 
