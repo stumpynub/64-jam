@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4itv5bsjbega"]
+
+[ext_resource type="PackedScene" uid="uid://bqj8hx0hq2wty" path="res://assets/meshes/enviroment/main_cave.blend" id="1_q1j5b"]
+[ext_resource type="Texture2D" uid="uid://cpm0rstkkiydj" path="res://assets/images/textures/rock.png" id="2_83b0o"]
+[ext_resource type="PackedScene" uid="uid://cyxu27fdomlhe" path="res://UI.tscn" id="3_8f4fy"]
+[ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="3_l8sjk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h3l4g"]
+albedo_texture = ExtResource("2_83b0o")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8f4fy"]
+
+[node name="level_main_cave" type="Node3D"]
+
+[node name="main_cave" parent="." instance=ExtResource("1_q1j5b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 5, -2)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="main_cave"]
+material_override = SubResource("StandardMaterial3D_h3l4g")
+mesh = SubResource("ArrayMesh_8f4fy")
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("3_l8sjk")]
+transform = Transform3D(0.988546, 0, -0.150916, 0, 1, 0, 0.150916, 0, 0.988546, -31.678, 2.34669, -1.67376)
+
+[node name="UI" parent="CharacterBody3D" instance=ExtResource("3_8f4fy")]
+metadata/_edit_use_anchors_ = true

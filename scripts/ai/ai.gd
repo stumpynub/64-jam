@@ -5,7 +5,7 @@ extends CharacterBody3D
 @export var target: Node3D
 @export var reached_distance= 4.0
 @export var walk_speed = 5
-@onready var player = $"../../CharacterBody3D"
+@onready var player = %Player
 
 
 func _physics_process(delta: float) -> void:

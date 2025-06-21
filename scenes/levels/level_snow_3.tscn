@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://3gp3glrtcns3"]
+[gd_scene load_steps=25 format=3 uid="uid://b6ib3d7qycygh"]
 
 [ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/level_base.gd" id="1_6467n"]
 [ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_ojhfn"]
@@ -74,11 +74,10 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Enviro"]
 environment = SubResource("Environment_ksw18")
 
-[node name="Player" parent="." instance=ExtResource("2_ojhfn")]
-unique_name_in_owner = true
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_ojhfn")]
 transform = Transform3D(-0.240228, 0, 0.970716, 0, 1, 0, -0.970716, 0, -0.240228, 82.3644, 2.34669, -20.656)
 
-[node name="UI" parent="Player" instance=ExtResource("3_ojhfn")]
+[node name="UI" parent="CharacterBody3D" instance=ExtResource("3_ojhfn")]
 metadata/_edit_use_anchors_ = true
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
@@ -89,7 +88,7 @@ generate_wait_time = 0.1
 
 [node name="AI" parent="NavigationRegion3D" node_paths=PackedStringArray("target") instance=ExtResource("7_ayfo3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.9807, 0.574428, 16.7088)
-target = NodePath("../../Player")
+target = NodePath("../../CharacterBody3D")
 
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="NavigationRegion3D/AI"]
 

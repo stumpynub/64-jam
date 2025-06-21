@@ -1,11 +1,14 @@
-[gd_scene load_steps=12 format=3 uid="uid://dntw88gfco4ki"]
+[gd_scene load_steps=15 format=3 uid="uid://cw2yrtqti4ecx"]
 
-[ext_resource type="Script" uid="uid://cdtu5myddukf0" path="res://scripts/ui/ui.gd" id="2_7m3nq"]
+[ext_resource type="Script" uid="uid://cdtu5myddukf0" path="res://ui.gd" id="2_7m3nq"]
 [ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_hebdk"]
+[ext_resource type="PackedScene" uid="uid://cyxu27fdomlhe" path="res://UI.tscn" id="3_odhmk"]
 [ext_resource type="PackedScene" uid="uid://cx62uttsobnlu" path="res://assets/meshes/enviroment/terrain/cave.blend" id="6_8hu1x"]
 [ext_resource type="Texture2D" uid="uid://d4nefkl25udlw" path="res://assets/images/moon.png" id="6_j84w5"]
 [ext_resource type="Shader" uid="uid://btnnba664xdt4" path="res://assets/shaders/shader_crtv.gdshader" id="7_2hx22"]
 [ext_resource type="Texture2D" uid="uid://cpm0rstkkiydj" path="res://assets/images/textures/rock.png" id="7_7m3nq"]
+[ext_resource type="PackedScene" uid="uid://cmi0dc5ro4vv0" path="res://scenes/levels/scene_changer.tscn" id="8_ygfxh"]
+[ext_resource type="PackedScene" uid="uid://s81dl61row4j" path="res://scenes/ai/ai.tscn" id="9_8ndv8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tortc"]
 sky_top_color = Color(0.0562731, 0.208392, 0.347208, 1)
@@ -51,16 +54,20 @@ shadow_enabled = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Enviro"]
 environment = SubResource("Environment_ksw18")
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("2_hebdk")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.551082, 1.45602, 0)
+[node name="Player" parent="." instance=ExtResource("2_hebdk")]
+unique_name_in_owner = true
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2.41475, 1.45602, 0)
 
-[node name="UI" type="Control" parent="CharacterBody3D"]
+[node name="UI" type="Control" parent="Player"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_7m3nq")
 metadata/_custom_type_script = "uid://cdtu5myddukf0"
+
+[node name="UI2" parent="Player" instance=ExtResource("3_odhmk")]
+metadata/_edit_use_anchors_ = true
 
 [node name="Geo" type="Node3D" parent="."]
 
@@ -102,6 +109,19 @@ transform = Transform3D(-0.96165, -0.0235023, -0.273271, 0.0244323, -0.999701, 0
 
 [node name="cave " parent="cave/cave" index="0"]
 material_override = SubResource("StandardMaterial3D_hebdk")
+
+[node name="door" parent="." instance=ExtResource("8_ygfxh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.06573, 2.00278, 0.0868595)
+sceneUID = "uid://b6ib3d7qycygh"
+
+[node name="CharacterBody3D2" parent="." node_paths=PackedStringArray("target") instance=ExtResource("9_8ndv8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66.5931, -5.21279, -9.93161)
+target = NodePath("../Player")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="CharacterBody3D2"]
+
+[connection signal="screen_entered" from="CharacterBody3D2/VisibleOnScreenNotifier3D" to="CharacterBody3D2" method="_on_visible_on_screen_notifier_3d_screen_entered"]
+[connection signal="screen_exited" from="CharacterBody3D2/VisibleOnScreenNotifier3D" to="CharacterBody3D2" method="_on_visible_on_screen_notifier_3d_screen_exited"]
 
 [editable path="cave"]
 [editable path="cave/cave"]

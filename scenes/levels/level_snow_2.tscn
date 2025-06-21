@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://3gp3glrtcns3"]
+[gd_scene load_steps=25 format=3 uid="uid://cbxroio35gmaq"]
 
 [ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/level_base.gd" id="1_6467n"]
 [ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_ojhfn"]
@@ -76,7 +76,7 @@ environment = SubResource("Environment_ksw18")
 
 [node name="Player" parent="." instance=ExtResource("2_ojhfn")]
 unique_name_in_owner = true
-transform = Transform3D(-0.240228, 0, 0.970716, 0, 1, 0, -0.970716, 0, -0.240228, 82.3644, 2.34669, -20.656)
+transform = Transform3D(0.999001, 0, -0.0446829, 0, 1, 0, 0.0446829, 0, 0.999001, 24.6481, -1.31652, 40.5725)
 
 [node name="UI" parent="Player" instance=ExtResource("3_ojhfn")]
 metadata/_edit_use_anchors_ = true
@@ -824,7 +824,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.61645, -2.55872, 18.4616)
 transform = Transform3D(-0.999788, 2.98023e-08, -1.73217, -0.483812, 1.9204, 0.27925, 1.66323, 0.558619, -0.959998, 26.0761, -4.33644, 51.3122)
 
 [node name="door" parent="cave_entrance" instance=ExtResource("16_birli")]
-transform = Transform3D(0.840144, -0.293143, 0.456317, 0.36047, 0.930437, -0.0659523, -0.405241, 0.219898, 0.887369, -2.60351, 1.18258, 1.50271)
+transform = Transform3D(0.840144, -0.293143, 0.456317, 0.36047, 0.930437, -0.0659523, -0.405241, 0.219898, 0.887369, -1.52829, 1.54371, 0.882105)
 sceneUID = "uid://dvi8b8dc6glt3"
 
 [node name="OmniLight3D" type="OmniLight3D" parent="cave_entrance"]
@@ -875,25 +875,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.3759, -0.729434, -68.9002)
 curve = SubResource("Curve3D_birli")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-0.975565, -0.0993997, -0.195925, -7.45055e-09, 0.891791, -0.452441, 0.219696, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
+transform = Transform3D(-0.975565, -0.0993995, -0.195925, -1.49011e-08, 0.891791, -0.45244, 0.219697, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
 progress = 3.42538
 
 [node name="small_creature" parent="Path3D/PathFollow3D" instance=ExtResource("17_mkd6d")]
-transform = Transform3D(0.231468, -0.0944602, 0, 0.0944602, 0.231468, 0, 0, 0, 0.25, 0, 0, 0)
 
 [node name="PathFollow3D2" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-0.975565, -0.0993997, -0.195925, -7.45055e-09, 0.891791, -0.452441, 0.219696, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
+transform = Transform3D(-0.975565, -0.0993995, -0.195925, -1.49011e-08, 0.891791, -0.45244, 0.219697, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
 progress = 3.42538
 
 [node name="small_creature" parent="Path3D/PathFollow3D2" instance=ExtResource("17_mkd6d")]
-transform = Transform3D(0.231468, -0.0944602, 0, 0.0944602, 0.231468, 0, 0, 0, 0.25, 0, 0, 0)
 
 [node name="PathFollow3D3" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(-0.975565, -0.0993997, -0.195925, -7.45055e-09, 0.891791, -0.452441, 0.219696, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
+transform = Transform3D(-0.975565, -0.0993995, -0.195925, -1.49011e-08, 0.891791, -0.45244, 0.219697, -0.441385, -0.870006, 1.18722, -3.17026, 6.50631)
 progress = 3.42538
 
 [node name="small_creature" parent="Path3D/PathFollow3D3" instance=ExtResource("17_mkd6d")]
-transform = Transform3D(0.231468, -0.0944602, 0, 0.0944602, 0.231468, 0, 0, 0, 0.25, 0, 0, 0)
 
 [connection signal="screen_entered" from="NavigationRegion3D/AI/VisibleOnScreenNotifier3D" to="NavigationRegion3D/AI" method="_on_visible_on_screen_notifier_3d_screen_entered"]
 [connection signal="screen_exited" from="NavigationRegion3D/AI/VisibleOnScreenNotifier3D" to="NavigationRegion3D/AI" method="_on_visible_on_screen_notifier_3d_screen_exited"]

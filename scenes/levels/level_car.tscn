@@ -1,6 +1,5 @@
-[gd_scene load_steps=37 format=3 uid="uid://c3ifsq6hfss0b"]
+[gd_scene load_steps=36 format=3 uid="uid://c3ifsq6hfss0b"]
 
-[ext_resource type="Script" uid="uid://duohxd8j2781y" path="res://scripts/level_base.gd" id="1_wbjnu"]
 [ext_resource type="PackedScene" uid="uid://vsm2wylpucxk" path="res://scenes/player/player.tscn" id="2_yd4a7"]
 [ext_resource type="PackedScene" uid="uid://cyxu27fdomlhe" path="res://UI.tscn" id="3_8yjrr"]
 [ext_resource type="Script" uid="uid://fsqdfpvilumv" path="res://scripts/auto_nav.gd" id="4_8a0f1"]
@@ -75,7 +74,6 @@ uv1_scale = Vector3(0.05, 0.05, 0.05)
 uv1_triplanar = true
 
 [node name="LevelProtoRail3" type="Node3D"]
-script = ExtResource("1_wbjnu")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
