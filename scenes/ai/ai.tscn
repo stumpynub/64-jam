@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cvqpu6n54qjdx" path="res://scenes/ai/creature 1.glb" id="3_d6u0q"]
 
 [node name="CharacterBody3D" type="CharacterBody3D" node_paths=PackedStringArray("agent")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 0, 0)
 script = ExtResource("1_be6ib")
 agent = NodePath("NavigationAgent3D")
 walk_speed = 3
@@ -19,7 +19,7 @@ transform = Transform3D(-8.3094e-08, 0, 1.90097, 0, 1.90097, 0, -1.90097, 0, -8.
 visible = false
 
 [node name="creature 1" parent="." instance=ExtResource("3_d6u0q")]
-transform = Transform3D(1.901, 0, 0, 0, 1.901, 0, 0, 0, 1.901, 0, 1.285, 0)
+transform = Transform3D(2.49286e-07, 0, 1.901, 0, 1.901, 0, -1.901, 0, 2.49286e-07, 0, 1.285, 0)
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.107639, 2.36487, -0.0728514)
